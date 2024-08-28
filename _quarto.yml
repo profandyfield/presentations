@@ -1,7 +1,7 @@
 project:
   type: default
 
-format: 
+format:
   revealjs:
     theme: [helpers/discovr_access.scss]
     template-partials:
