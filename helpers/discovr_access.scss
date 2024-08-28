@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,400italic,400bold);
+@import url(https://fonts.googleapis.com/css?family=Sintony:400,400bold);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono&display=swap);
+
+$txt:     #707172 !default; // main text colour (against white), if background use with white text
+$h1_col: #7B67A2 !default; // H1 colour (against white), if background use with white text
+$emph1: #447E41  !default; // link colour (against white), if background use with white text
+$link: #BB5143  !default; // bold colour (against white), if background use with white text
+$box: #807030 !default; // box colour (against white), use with txt and h1_col text, do not use as text
+$wht: #FFFFFF !default; // use with white text
+$quote: #657284 !default; // use with white text
+
+
+// Primary/body text
+$mainFont: 'Poppins', sans-serif;
+$mainFontSize: 24px;
+$mainColor: $txt;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Sintony', Impact, sans-serif;
+$headingColor: $h1_col;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$headingFontWeight: normal;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 2.00em;
+$heading2Size: 1.55em;
+$heading3Size: 1.25em;
+$heading4Size: 1.00em;
+
+$codeFont: 'Fira Mono';
+
+/*-- scss:defaults --*/
+
+// colors
+$body-bg: $wht !default;
+$body-color: $txt !default;
+$link-color: $link !default;
+$selection-bg: $txt !default;
+$border-color:  $link;
+$subtitle: $wht !default;
+
+
+/*-- scss:rules --*/
+
+.slide-background-content{
+  background-image: url("/shared_media/images/ais2_ppt_hex_white.jpg");
+  background-size: cover;
+}
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+  color: $quote //colour of text in blockquotes
+}
+
+.reveal .slide-logo {
+  height: 100px !important;
+  width: 100px!important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+.reveal .progress {
+  color: $emph1 !important;
+  height: 1%;
+}
+
+/* callouts */
+
+.reveal .slide div.callout-tip {
+  border-left-color: $box !important;
+}
+
+.reveal .slide div.callout-tip.callout-style-default .callout-title {
+  background-color: lighten($box, 50%);
+  color: $box
+}
+
+/* hamburger colour */
+
+.reveal .slide-menu-button .fa-bars::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(68, 126, 65)" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>') !important;
+}
+
+
+// start using css here
+
+.title {
+  font-size: 60px !important;
+  color: white !important;
+}
+
+.author {
+  font-size: 40px;
+  color: white;
+}
+
+.institute {
+  font-size: 30px;
+  font-style: italic;
+  color: white;
+}
+
+
+.txt_xl {
+    font-size: 150%;
+}
+
+.txt_l {
+    font-size: 125%;
+}
+
+.bold_col {
+    color: $link;
+    font-weight: bold;
+}

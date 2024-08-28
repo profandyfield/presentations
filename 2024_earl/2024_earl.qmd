@@ -1,0 +1,566 @@
+---
+title: "Narrowing the gender gap in computing"
+subtitle: "Psychology, R, invisibility cloaks, the Pied Piper and a Trojan horse"
+author: "Andy Field"
+format: 
+  revealjs:
+    code-fold: true
+execute: 
+  eval: true
+---
+
+```{r}
+library(tidyverse)
+
+
+here::here("helpers/discovr_helpers.R") |> source()
+```
+
+
+```{r}
+#| echo: false
+
+hesa_stats <- readr::read_csv(
+  "./data/sb265_figure_13.csv",
+  skip = 16,
+  col_names = c("Subject Area", "2019_Female", "2019_Male", "2019_Other", "2019_Total", "2020_Female", "2020_Male", "2020_Other", "2020_Unknown", "2020_Total", "2021_Female", "2021_Male", "2021_Other", "2021_Unknown", "2021_Total")) |> 
+  dplyr::filter(!grepl("Total", `Subject Area`)) |> 
+  tidyr::pivot_longer(
+    cols = `2019_Female`:`2021_Total`,
+    names_to = c("Year", ".value"),
+    names_pattern = "(.*)_(.*)"
+  ) |>
+  dplyr::select(-Unknown) |> 
+  dplyr::mutate(
+    `Subject Area` = gsub("[0-9]{2}\\s", "", `Subject Area`),
+    `Proportion female` = Female/Total
+  ) |> 
+  dplyr::arrange(desc(`Proportion female`)) |> 
+  dplyr::group_by(Year) |> 
+  dplyr::mutate(Rank = dense_rank(desc(`Proportion female`))) |> 
+  select(`Subject Area`, Year, Female, `Proportion female`, Rank) |> 
+  rename(
+    N = Female,
+    Proportion = `Proportion female`
+  ) |> 
+  ungroup()
+```
+
+
+## The pioneers of modern tech
+
+![](media/women_coders_historic_small.png){fig-align="center" height=450}
+
+::: {.footnote}
+Image from [Guest, O., & Forbes, S. H. (2023). Teaching coding inclusively: if this, then what? https://doi.org/10.31235/osf.io/3r2ez](https://doi.org/10.31235/osf.io/3r2ez)
+:::
+
+::: {.notes}
+
+Ada Lovelace: Creating the first computer program
+Grace Hopper: Inventing the compiler
+Frances 'Betty' Snyder Holberton, Jean Jennings Bartik, Kathleen “Kay” McNulty Mauchly Antonelli, Marlyn Wescoff Meltzer, Ruth Lichterman Teitelbaum and Frances Bilas Spence: programmers of the ENIAC computer (a secret US Army project during World War II)
+
+:::
+
+## Trends over time^[Figures from Ashcraft et al. (2016). Women in tech: The facts. National Center for Women & Information Technology (NCWIT). [https://ncwit.org/resource/thefacts/](https://ncwit.org/resource/thefacts/)]
+
+::: {.panel-tabset}
+
+## Computing occupations
+
+![](media/ashcraft_2016_1_2.png){fig-align="center" height=400}
+
+## STEM degrees
+
+![](media/ashcraft_2016_1_3.png){fig-align="center" height=400}
+
+## Retention
+
+![](media/ashcraft_2016_1_6.png){fig-align="center" height=400}
+
+
+
+
+:::
+
+::: {.notes}
+Y-axis should be labelled proportion, not percentage.
+
+In non-stem, over nearly 20 years a proportion of 0.8-0.9 are retained (so 10-20% dropout)
+In STEM, retention is at about 0.7 (30% dropout) after 3 years, and close to 50% dropout over 10 years
+:::
+
+## 
+
+> "Programming has a sexism problem" ([Guest & Forbes, 2023](https://doi.org/10.31235/osf.io/3r2ez))
+
+::: {.fragment}
+- 
+:::
+
+## 'Cracking the gender code'
+
+> *"Only by tailoring courses to girls' specific needs can we boost their commitment to computing."* Accenture (2016). [Cracking the gender code](https://www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code)
+
+::: columns
+::: {.column width="60%"}
+
+- [Accenture](https://www.accenture.com) report with [Girls Who Code](https://girlswhocode.com/en-uk): Cracking the Gender Code (2016)
+- Interviews/Surveys
+  - 4,000 girls in junior high and high school,
+  - 500 boys aged 12–18,
+  - 650 male and female college students,
+  - 2,000 working women < 30 years (500 working in computing)
+  - 250 teachers and principals
+  - 2,200 parents of girls aged 12–18
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="35%"}
+![](media/ctgc_cover.jpg){width=70%}
+
+:::
+:::
+
+## Cracking the gender code
+
+![](media/gwc_report_fig1.png)
+
+::: {.notes}
+Junior high = 10-14 years
+High school = 14-18 years
+College = 18+
+:::
+
+
+## Cracking the gender code: recommendations
+
+### Junior high (10-14 years)
+
+::: {.fragment}
+
+- **Action 1**: Deepen girls' hands-on computing experience
+  + More exposure to games = more likely to go into coding (But ...)
+  + Introduce coding through computer games
+
+:::
+
+::: {.fragment}
+
+- **Action 2**: Change girls' perceptions of computing
+  - Challenge stereotypes
+  - Role models
+
+:::
+
+::: {.fragment}
+
+- **Action 3**: Support parents in understanding the wider role of computing
+
+:::
+
+::: {.fragment}
+> "... there is little awareness among any group that applying computing and coding to real societal problems can help change the world, which can be a powerful hook for girls and a magnet for women."
+:::
+
+
+##
+
+### High school (14-18 years)
+
+::: {.fragment}
+
+- **Action 1**: Redesign computing courses to appeal to girls
+
+> "81% of high school girls who studied computing over the summer were interested in studying computing at college, compared to 52% of those who only studied computing at school."
+
+:::
+
+::: {.fragment}
+
+- **Action 2**: Create grassroots campaigns to motivate peer group action
+
+> "Definitely [girls want] more clubs and after schools programs. We should be making a connection between ladies of distinction and computing or coding, because a lot of the girls want to feel empowered." (Teacher)
+
+:::
+
+## 
+
+::: {.fragment}
+
+- **Action 3**: Attract more women teachers
+
+> "62% of girls in high school who have had someone encourage them to study computing and coding say they are likely to major in it at college, compared to only 15% who have had no role model."
+
+![](media/ms_confident.png){fig-align="center" width=500 }
+
+:::
+
+##
+
+### College (18+ years)
+
+::: {.fragment}
+
+- **Action 1**: Give computing courses a makeover
+
+> "This includes engaging young women by describing computing courses – and
+potential careers in the field – in ways that capture women's strong interest in
+problem-solving, especially around real-world and social issues."
+
+:::
+
+::: {.fragment}
+
+- **Action 2**: Offer female students immersion programs
+  + Essentially, allow exposure to coding on non-coding courses and make it easy to switch.
+
+:::
+
+::: {.fragment}
+
+- **Action 3**: Create female mentorship and role model programs
+
+> "... the influence of role models is strong among women who don't study computing at college but then go on to pursue a computing career."
+
+:::
+
+## Recurring themes
+
+::: {.fragment}
+::: columns
+::: {.column width="50%"}
+
+- **Make content engaging for women**
+  - The wider context of computing
+  - Teach within a more female-centric context
+  - Capture women's interests
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+
+:::
+:::
+:::
+
+::: {.fragment}
+::: columns
+::: {.column width="50%"}
+
+- **Role models**
+  - Challenge stereotypes
+  - More female teachers
+  - Inspiration
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+:::
+:::
+:::
+
+
+::: {.fragment}
+
+</br>
+
+:::{.callout-tip icon=false}
+## {{< fa question >}} Question
+
+put something here
+:::
+:::
+
+## HESA student data 2019-20^[Data from [www.hesa.ac.uk/data-and-analysis/students/what-study](https://www.hesa.ac.uk/data-and-analysis/students/what-study)]
+
+::: {.panel-tabset}
+
+## 2019
+
+```{r}
+#| echo: false
+
+
+# uses custom functions style_tbl_head() and style_tbl_rows() to create javascript to style font and background colour of data table rows and header
+
+hesa_stats |>
+  filter(Year == "2019") |> 
+  dplyr::select(-Year) |> 
+  DT::datatable(style = 'default',
+                caption = "HE student enrolments by CAH level 1 subject (Women)",
+                options = list(pageLength = 10, rowCallback = style_tbl_rows()), 
+                callback = style_tbl_head(head_txt = "#ffffff", head_bg = h1_col)) |> 
+  DT::formatPercentage("Proportion", 2)
+```
+
+
+
+## 2020
+
+```{r}
+#| echo: false
+
+hesa_stats |> 
+  filter(Year == "2020") |> 
+  dplyr::select(-Year) |> 
+  DT::datatable(style = 'default',
+                caption = "HE student enrolments by CAH level 1 subject (Women)",
+                options = list(pageLength = 7, rowCallback = style_tbl_rows()), 
+                callback = style_tbl_head(head_txt = "#ffffff", head_bg = h1_col)) |> 
+  DT::formatPercentage("Proportion", 2)
+```
+
+## 2021
+
+```{r}
+#| echo: false
+
+hesa_stats |> 
+  filter(Year == "2021") |> 
+  dplyr::select(-Year) |> 
+  DT::datatable(style = 'default',
+                caption = "HE student enrolments by CAH level 1 subject (Women)",
+                options = list(pageLength = 7, rowCallback = style_tbl_rows()), 
+                callback = style_tbl_head(head_txt = "#ffffff", head_bg = h1_col)) |> 
+  DT::formatPercentage("Proportion", 2)
+```
+
+:::
+
+
+## Why do many women choose psychology?
+
+::: columns
+::: {.column width="60%"}
+![](media/su_riasec_2009.png){width=100%}
+:::
+
+::: {.column width="40%"}
+
+> "... capture women's strong interest in problem-solving, especially around real-world and social issues." 
+
+:::
+:::
+
+
+
+::: {.notes}
+Do women have strong interest in problem-solving, especially around real-world and social issues?
+
+Su et al. (2009) massive meta-analysis looking at differences in interests in men and women. Let's focus on the RIASEC model of vocational interests.
+
+Diagram shows the main areas of model. Larger circles show larger pooled effect sizes representing male-female differences. The key finding is women are more interested in people, and men in things.
+
+
+RIASEC model of vocational interests
+Realistic - interest in working with things and gadgets or working outdoors;
+Investigative interest in science, including mathematics, physical and social sciences, and biological and medical sciences;
+Artistic interest in creative expression, including writing and the visual and performing arts;
+Social interest in helping people;
+Enterprising interest in working in leadership or persuasive roles directed toward achieving economic objectives; and
+Conventional interest in working in well-structured environments, especially
+business settings.
+:::
+
+
+## {background-video="/shared_media/video/social_media_bad_youtube.mp4" background-size="cover"}
+
+## Psychology is about people and problem solving!
+
+::: {.fragment}
+
+- Does social media negatively affect mental health?
+  - Longitudinal Study of Young People in England (LSYPE2), [Viner, et al. (2019)](https://doi.org/10.1016/S2352-4642%2819%2930186-5)
+
+:::
+
+::: {.fragment}
+
+- Does playing "hard to get" make you more desirable?
+  - [Birnbaum et al. (2020)](https://journals.sagepub.com/doi/10.1177/0265407520927469)
+
+:::
+
+::: {.fragment}
+
+- Do good friendships buffer against poor family relationships?
+  - Kaufman et al. (2022)
+
+:::
+
+::: {.fragment}
+
+- Can music be used to regulate emotions?
+  - [Cook et al. (2019)](https://journals.sagepub.com/doi/10.1177/0305735617734627), [Sharman & Dingle (2015)](https://www.frontiersin.org/articles/10.3389/fnhum.2015.00272/full)
+
+:::
+
+::: {.fragment}
+
+- Does scary TV lead to anxiety?
+  - [Field & Pierce (2016)](https://doi.org/10.1111/hcre.12069)
+
+:::
+
+
+
+## {background-image="/shared_media/images/pied_piper.png" background-size="cover"}
+
+
+<audio controls>
+  <source src="../shared_media/audio/symphony_clip.mp3" type="audio/mpeg">
+  <source src="../shared_media/audio/symphony_clip.ogg" type="audio/ogg"/>
+</audio>
+
+
+![](../shared_media/images/speech_discover_ourselves.png){.absolute top=0 left=300 width="350"}
+
+
+::: {.fragment}
+![](../shared_media/images/speech_suckers.png){.absolute top=50 left=25 width="200"}
+:::
+
+## The reality of studying psychology
+
+![](../shared_media/images/tidyverse.png){.absolute top=450 left=650 width="150"}
+
+![](../shared_media/images/easystats_hex.png){.absolute top=450 left=900 width="150" }
+
+::: {.fragment}
+
+- 75% Psychology
+:::
+
+::: {.fragment}
+
+- 25% Statistics, research methods, statistical computing
+  - General R (`|>`, `here`, `knitr`)
+  - Distributions, sampling theory, probability
+  - Data viz (`ggplot2`, `GGally`)
+  - Descriptive statistics (`datawizard`, `dplyr`, `forcats`, `readr`, `tibble`, `tidyr`)
+  - Associations (`correlation`) 
+  - Gaussian linear models (`afex`, `broom`, `car`, `effectsize`, `emmeans`,  `ggfortify`, `lm()`, `modelbased`, `parameters`, `t.test()`)
+  - Logistic regression (`glm()`, `broom`)
+  - Mediation (`lavaan`)
+  - Robust methods (`robust`, `WRS2`)
+  - Factor analysis (`psych`)
+
+:::
+
+## Teach using interactive tutorials
+
+
+```{r, echo = F}
+knitr::include_url("https://discovr.rocks/discovr/", height = "600px")
+```
+
+##
+
+
+```{r, echo = F}
+knitr::include_url("https://milton-the-cat.rocks/learnr/r/discovr_11/", height = "600px")
+```
+
+## Computing skills
+
+- **Coding**
+  - Functions, loops, data wrangling, data visualisation, reading/writing files, creating objects
+  - Version control
+- **Web skills**
+  - Build webpages using `r quarto(scale = 0.3)` and Markdown
+  - Can be customized with `html` and `css` 
+- **Applications**
+  - Build apps using [shiny](https://shiny.rstudio.com/)
+- **Presentations**
+  - These slides were built using `r quarto(scale = 0.3)`
+  
+  
+##
+
+```{r, echo = F}
+knitr::include_url("media/model_answer_2023.html", height = "600px")
+```
+
+::: {.notes}
+R integrates aspects of coding and computing.
+::: 
+
+
+## Psychology and coding
+
+> "applying computing and coding to real societal problems can help change the world, which can be a powerful hook for girls and a magnet for women."
+
+
+- The skills acquired through learning `r rproj()` will be taught within the context of Psychology examples.
+- Psychology is a science that looks to addresses societal and inter- and intra-personal problems.
+
+
+## Role models: R-ladies^[[https://rladies.org/](https://rladies.org/)]
+
+> "... the influence of role models is strong among women who don't study computing at college but then go on to pursue a computing career."
+
+:::{.fragment}
+
+![](media/r_ladies_2024_small.png){fig-align="center" width=700}
+
+:::
+
+## Tidy Tuesday^[[https://juliasilge.com/blog/](https://juliasilge.com/blog/)]
+
+```{r, echo = F}
+knitr::include_url("https://juliasilge.com/blog/", height = "500px")
+```
+
+::: {.notes}
+
+Julia Silge (SILL-GHEE)
+:::
+
+##
+
+```{r, echo = F}
+knitr::include_url("https://juliasilge.com/blog/chocolate-ratings/", height = "600px")
+```
+
+::: {.notes}
+
+Text analysis of descriptions of chocolate alongside ratings of it. So, data set people rate chocolate then describe it.
+
+Text cloud shows high ratings associated by lots of people with words balanced, complex, creamy. Low ratings associated with the words pastey, chemical, bitter.
+:::
+
+## Local role models
+
+> "62% of girls in high school who have had someone encourage them to study computing and coding say they are likely to major in it at college, compared to only 15% who have had no role model."
+
+
+![](media/sussex_role_models.png){fig-align="center" width=500}
+
+
+# Too long, didn't listen
+
+- Important ways to encourage women into computing
+  - Contexts that are engaging for women
+  - Role models
+  
+- Psychology
+  - Predominantly female intake
+  - Large numbers of female faculty (role models)
+  - Involves topics/themes that naturally interest women
+  - Involves a lot of statistics and statistical computing
+  - At some institutions statistical computing involves software (`r rproj()`) that requires coding and computing skills.
+  - The `r rproj()` ecosystem is diverse, inclusive and full of brilliant rolw models
+
+
+
+

@@ -1,0 +1,41 @@
+---
+title: ""
+format: 
+  html:
+    toc: true
+    toc_float: true
+    theme: [helpers/discovr_access.scss]
+---
+
+# Presentation index
+
+## 2024
+
+- [Narrowing the gender gap in computing: Psychology, R, invisibility cloaks, the Pied Piper and a Trojan horse](2024_earl/2024_earl.html). The Enterprise Applications of the R Language (EARL) Conference, The hGrand Hotel, Brighton, September 4<sup>th</sup>. 
+
+
+## 2023
+
+- [Using learnr to create interactive tutorials for R (and RStudio): from the pinnacle to the pit](https://profandyfield.github.io/talks/stats_talks/2023_learnr/2023_talmo_learnr.html). Teaching (with) R. Hosted by Teaching and Learning Mathematics Online (TALMO) in conjunction with Royal Statistical Society Teaching Statistics Section. February 8<sup>th</sup>. 
+
+## 2022
+- [Teaching statistics: damnation and deliverance](https://profandyfield.github.io/talks/stats_talks/2022_sage_teaching_stats/2022_sage.html). SAGE publications, London. September 7<sup>th</sup>.
+- [Being an academic](https://profandyfield.github.io/talks/misc_talks/2022_brighton_college/2022_brighton_college.html). Brighton College Professions Conference. May 14<sup>th</sup>.
+- [Psychology: a cloak of invisibility for computing [STEM Ambassador] ](https://profandyfield.github.io/talks/stats_talks/2022_stem_computing/2022_stem_computing.html). SETSA Festival of computing: Shifting the gender gap in computing [online]. March 16<sup>th</sup>.
+- [An adventure in statistics [Keynote]](https://profandyfield.github.io/talks/stats_talks/2022_core_maths_festival/2022_core_maths_festival.html). Advanced Mathematics Support Programme (AMSP) Winter Core Maths Festival [online]. January 25<sup>th</sup>-6th.
+
+## 2021
+
+- [Using learnr to create interactive R tutorials](https://profandyfield.github.io/talks/stats_talks/2021_learnr/2021_learnr.html). Teaching R in Psychology. Hosted virtually by Lancaster University. July 19<sup>th</sup>.
+- [Teaching statistics: damnation and deliverance [Keynote]](https://profandyfield.github.io/talks/stats_talks/2021_teaching_stats/2021_teaching_stats.html). Teaching Statistics in Psychology Virtual Conference, Trent University and York University, Canada. May 5<sup>th</sup>-6th.
+
+## 2019
+
+- [Damnation and Deliverance in Psychology](https://profandyfield.github.io/talks/stats_talks/2019_magnusson/magnusson_intro.html). Introduction talk for Kristoffer Magnusson's PhD defense, December 9th.
+- [Implementing principles and practices of open science in peer relations research](https://profandyfield.github.io/talks/stats_talks/srcd_2019/forking_paths_workshop/index.html). Society for Research in Child Development Biennial Meeting, Baltimore, Maryland, 21st-23rd March.
+- [What does the transition from primary to secondary education mean for maths achievement and maths anxiety?](https://profandyfield.github.io/talks/maths_education_talks/2019_bristol/bristol_2019.html). University of Bristol, February 27th.
+
+
+## 2018
+
+- [What does the transition from primary to secondary education mean for maths achievement and maths anxiety?](https://profandyfield.github.io/talks/maths_education_talks/2018_southampton/southampton_2018.html). University of Southampton, November 26th.

@@ -1,0 +1,17 @@
+project:
+  type: default
+
+format: 
+  revealjs:
+    theme: [helpers/discovr_access.scss]
+    template-partials:
+      - /helpers/title-slide.html
+    title-slide-attributes:
+      data-background-image: /shared_media/images/ais_ppt_hex_blue.jpg
+      data-background-size: 100%
+      data-background-position: center
+      data-background-opacity: "1"
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto

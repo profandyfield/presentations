@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,400italic,400bold);
+@import url(https://fonts.googleapis.com/css?family=Sintony:400,400bold);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono&display=swap);
+
+
+// contrast palette for accessibility based on #4B9D8E
+
+$ds6purpdk: #76609a !default; // use with white text
+$ds6purp: #a68ecb !default; // use with dark text
+$ds6bwn: #d3ad67 !default; // use with dark text
+$ds6bwndk: #a87b40 !default; // use with dark text
+$ds6grndk: #297466 !default; // use with white text
+
+$ds6:     #4B9D8E !default;
+$ds6grey: #4A4A48 !default;
+$ds6salmon:     #CA8878 !default;
+
+// Primary/body text
+$mainFont: 'Poppins', sans-serif;
+$mainFontSize: 24px;
+$mainColor: $ds6grey;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Sintony', Impact, sans-serif;
+$headingColor: $ds6;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$headingFontWeight: normal;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 2.00em;
+$heading2Size: 1.55em;
+$heading3Size: 1.25em;
+$heading4Size: 1.00em;
+
+$codeFont: 'Fira Mono';
+
+/*-- scss:defaults --*/
+
+// colors
+$body-bg: white !default;
+$body-color: $ds6purp !default;
+$link-color: $ds6purpdk !default;
+$selection-bg: #26351c !default;
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
+
+.reveal .slide-logo {
+  height: 100px !important;
+  width: 100px!important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+.reveal .slide-background-content{
+  background-image: url('../../../../../../media/ds6_footer.png');
+  background-position: 98% 100%;
+  background-size: 30%;
+}
+
+
+// start using css here
+
+.title {
+  font-size: 60px !important;
+  color: $ds6grey !important;
+}
+
+.author {
+  font-size: 40px;
+  color: $ds6grey;
+}
+
+.institute {
+  font-size: 30px;
+  font-style: italic;
+  color: white;
+}
+
+
+.txt_xl {
+    font-size: 150%;
+}
+
+.txt_l {
+    font-size: 125%;
+}
+
+.hint {
+    color: $ds6salmon;
+}
+
+
+.tip {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #136CB9;
+  background-color: #136CB9;
+  background-color: rgba(19, 108, 185, 0.1);
+  color: #2C5577;
+}
+
+/* Pedagogic boxes */
+
+.tip {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #136CB9;
+  background-color: #136CB9;
+  background-color: rgba(19, 108, 185, 0.1);
+  color: #2C5577;
+}
+
+
+.note {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #f3e2c4;
+  background-color: #f3e2c4;
+  background-color: rgba(243, 226, 196, 0.1);
+  color: #775418;
+}
+
+.warning {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #CA3E34;
+  background-color: #CA3E34;
+  background-color: rgba(145, 45, 37, 0.1);
+  color: #912D25;
+}
+
+.infobox {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #E8EAE5;
+  background-color: #E8EAE5;
+  background-color: rgba(232, 234, 229, 0.95);
+  color: #2F4F4F;
+}
+
+.whitebox {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.70);
+  color: #2C5577;
+}
+
+.whitebox9 {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.90);
+  color: #2C5577;
+}
+
+.drkbox {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #3F3F3F;
+  background-color: #3F3F3F;
+  background-color: rgba(63, 63, 63, 0.70);
+  color: #FFFFFF;
+}
+
+.blubox {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #15224c;
+  background-color: #15224c;
+  background-color: rgba(21, 34, 76, 0.70);
+  color: #FFFFFF;
+}
