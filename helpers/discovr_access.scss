@@ -51,9 +51,10 @@ $subtitle: $wht !default;
 /*-- scss:rules --*/
 
 .slide-background-content{
-  background-image: url("/shared_media/images/ais2_ppt_hex_white.jpg");
+  background-image: url("https://github.com/profandyfield/presentations/tree/master/shared_media/images/ais2_ppt_hex_white.jpg");
   background-size: cover;
 }
+
 
 .reveal .slide blockquote {
   border-left: 3px solid $text-muted;
@@ -92,6 +93,10 @@ $subtitle: $wht !default;
 
 
 // start using css here
+
+p.subtitle {
+  color: white !important;
+}
 
 .title {
   font-size: 60px !important;
