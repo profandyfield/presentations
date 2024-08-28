@@ -1,14 +1,14 @@
 ---
-title: ""
+title: "Presentations"
 author: "Andy P. Field"
 format: 
   html:
+    title-block-banner: "#7B67A2"
     toc: true
     toc_float: true
     theme: [helpers/discovr_access.scss]
 ---
 
-# Presentation index
 
 ## 2024
 
