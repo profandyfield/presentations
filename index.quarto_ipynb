@@ -1,0 +1,72 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Presentations\"\n",
+        "author: \"Andy P. Field\"\n",
+        "format: \n",
+        "  html:\n",
+        "    toc: true\n",
+        "    toc_float: true\n",
+        "    theme: [helpers/discovr_access.scss]\n",
+        "---\n",
+        "\n",
+        "\n",
+        "\n",
+        "## 2024\n",
+        "\n",
+        "- [Narrowing the gender gap in computing: Psychology, R, invisibility cloaks, the Pied Piper and a Trojan horse](2024_earl/2024_earl.html). The Enterprise Applications of the R Language (EARL) Conference, The hGrand Hotel, Brighton, September 4<sup>th</sup>. \n",
+        "\n",
+        "\n",
+        "\n",
+        "```{css}\n",
+        "\n",
+        ".title {\n",
+        "  color: #7B67A2\n",
+        "}\n",
+        "\n",
+        "```\n",
+        "\n",
+        "\n",
+        "## 2023\n",
+        "\n",
+        "- [Using learnr to create interactive tutorials for R (and RStudio): from the pinnacle to the pit](https://profandyfield.github.io/talks/stats_talks/2023_learnr/2023_talmo_learnr.html). Teaching (with) R. Hosted by Teaching and Learning Mathematics Online (TALMO) in conjunction with Royal Statistical Society Teaching Statistics Section. February 8<sup>th</sup>. \n",
+        "\n",
+        "## 2022\n",
+        "- [Teaching statistics: damnation and deliverance](https://profandyfield.github.io/talks/stats_talks/2022_sage_teaching_stats/2022_sage.html). SAGE publications, London. September 7<sup>th</sup>.\n",
+        "- [Being an academic](https://profandyfield.github.io/talks/misc_talks/2022_brighton_college/2022_brighton_college.html). Brighton College Professions Conference. May 14<sup>th</sup>.\n",
+        "- [Psychology: a cloak of invisibility for computing [STEM Ambassador] ](https://profandyfield.github.io/talks/stats_talks/2022_stem_computing/2022_stem_computing.html). SETSA Festival of computing: Shifting the gender gap in computing [online]. March 16<sup>th</sup>.\n",
+        "- [An adventure in statistics [Keynote]](https://profandyfield.github.io/talks/stats_talks/2022_core_maths_festival/2022_core_maths_festival.html). Advanced Mathematics Support Programme (AMSP) Winter Core Maths Festival [online]. January 25<sup>th</sup>-6th.\n",
+        "\n",
+        "## 2021\n",
+        "\n",
+        "- [Using learnr to create interactive R tutorials](https://profandyfield.github.io/talks/stats_talks/2021_learnr/2021_learnr.html). Teaching R in Psychology. Hosted virtually by Lancaster University. July 19<sup>th</sup>.\n",
+        "- [Teaching statistics: damnation and deliverance [Keynote]](https://profandyfield.github.io/talks/stats_talks/2021_teaching_stats/2021_teaching_stats.html). Teaching Statistics in Psychology Virtual Conference, Trent University and York University, Canada. May 5<sup>th</sup>-6th.\n",
+        "\n",
+        "## 2019\n",
+        "\n",
+        "- [Damnation and Deliverance in Psychology](https://profandyfield.github.io/talks/stats_talks/2019_magnusson/magnusson_intro.html). Introduction talk for Kristoffer Magnusson's PhD defense, December 9th.\n",
+        "- [Implementing principles and practices of open science in peer relations research](https://profandyfield.github.io/talks/stats_talks/srcd_2019/forking_paths_workshop/index.html). Society for Research in Child Development Biennial Meeting, Baltimore, Maryland, 21st-23rd March.\n",
+        "- [What does the transition from primary to secondary education mean for maths achievement and maths anxiety?](https://profandyfield.github.io/talks/maths_education_talks/2019_bristol/bristol_2019.html). University of Bristol, February 27th.\n",
+        "\n",
+        "\n",
+        "## 2018\n",
+        "\n",
+        "- [What does the transition from primary to secondary education mean for maths achievement and maths anxiety?](https://profandyfield.github.io/talks/maths_education_talks/2018_southampton/southampton_2018.html). University of Southampton, November 26th."
+      ],
+      "id": "43e286ac"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
