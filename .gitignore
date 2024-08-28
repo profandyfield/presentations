@@ -5,3 +5,5 @@
 .DS_Store
 .quarto
 media_dev/
+
+/.quarto/

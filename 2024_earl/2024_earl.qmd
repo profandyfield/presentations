@@ -414,7 +414,7 @@ business settings.
 
 
 
-## {background-image="/shared_media/images/pied_piper.png" background-size="cover"}
+## {background-image="../shared_media/images/pied_piper.png" background-size="cover"}
 
 
 <audio controls>
