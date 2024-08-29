@@ -522,8 +522,6 @@ business settings.
 
 :::
 
-## What can you do?
-
 ## Tidy Tuesday^[[https://juliasilge.com/blog/](https://juliasilge.com/blog/)]
 
 ```{r, echo = F}
