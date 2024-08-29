@@ -34,7 +34,7 @@ Frances 'Betty' Snyder Holberton, Jean Jennings Bartik, Kathleen “Kay” McNul
 
 :::
 
-## Trends over time^[Figures from Ashcraft et al. (2016). Women in tech: The facts. National Center for Women & Information Technology (NCWIT). [https://ncwit.org/resource/thefacts/](https://ncwit.org/resource/thefacts/)]
+## Trends over time^[Figures from Ashcraft et al. (2016). Women in tech: The facts. NCWIT. [https://ncwit.org/resource/thefacts/](https://ncwit.org/resource/thefacts/)]
 
 ::: {.panel-tabset}
 
@@ -64,9 +64,9 @@ In STEM, retention is at about 0.7 (30% dropout) after 3 years, and close to 50%
 
 
 
-## "Cracking the gender code"^[Accenture & Girls Who Code. (2016). Cracking the gender code. [www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code](https://www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code)]
+## "Cracking the gender code"^[Accenture & Girls Who Code. (2016).  [Cracking the gender code.](https://www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code)]
 
-> *"Only by tailoring courses to girls' specific needs can we boost their commitment to computing."* [Cracking the gender code](https://www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code)
+> *"Only by tailoring courses to girls' specific needs can we boost their commitment to computing."* 
 
 ::: columns
 ::: {.column width="60%"}
@@ -98,7 +98,7 @@ In STEM, retention is at about 0.7 (30% dropout) after 3 years, and close to 50%
 </br>
 
 :::{.footnote}
-Accenture & Girls Who Code. (2016). Cracking the gender code. [www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code](https://www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code)]
+Accenture & Girls Who Code. (2016). Cracking the gender code. [www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code](https://www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code)
 :::
 
 ::: {.notes}
@@ -135,7 +135,7 @@ College = 18+
 :::
 
 ::: {.fragment}
-> "... there is little awareness among any group that applying computing and coding to real societal problems can help change the world, which can be a powerful hook for girls and a magnet for women."
+> *"... there is little awareness among any group that applying computing and coding to real societal problems can help change the world, which can be a powerful hook for girls and a magnet for women."*
 :::
 
 
@@ -147,7 +147,7 @@ College = 18+
 
 - **Action 1**: Redesign computing courses to appeal to girls
 
-> "81% of high school girls who studied computing over the summer were interested in studying computing at college, compared to 52% of those who only studied computing at school."
+> *"81% of high school girls who studied computing over the summer were interested in studying computing at college, compared to 52% of those who only studied computing at school."*
 
 :::
 
@@ -155,7 +155,7 @@ College = 18+
 
 - **Action 2**: Create grassroots campaigns to motivate peer group action
 
-> "Definitely [girls want] more clubs and after schools programs. We should be making a connection between ladies of distinction and computing or coding, because a lot of the girls want to feel empowered." (Teacher)
+> *"Definitely [girls want] more clubs and after schools programs. We should be making a connection between ladies of distinction and computing or coding, because a lot of the girls want to feel empowered."* (Teacher)
 
 :::
 
@@ -165,7 +165,7 @@ College = 18+
 
 - **Action 3**: Attract more women teachers
 
-> "62% of girls in high school who have had someone encourage them to study computing and coding say they are likely to major in it at college, compared to only 15% who have had no role model."
+> *"62% of girls in high school who have had someone encourage them to study computing and coding say they are likely to major in it at college, compared to only 15% who have had no role model."*
 
 ![](media/ms_confident.png){fig-align="center" width=500 }
 
@@ -179,9 +179,9 @@ College = 18+
 
 - **Action 1**: Give computing courses a makeover
 
-> "This includes engaging young women by describing computing courses – and
+> *"This includes engaging young women by describing computing courses – and
 potential careers in the field – in ways that capture women's strong interest in
-problem-solving, especially around real-world and social issues."
+problem-solving, especially around real-world and social issues."*
 
 :::
 
@@ -195,7 +195,7 @@ problem-solving, especially around real-world and social issues."
 
 - **Action 3**: Create female mentorship and role model programs
 
-> "... the influence of role models is strong among women who don't study computing at college but then go on to pursue a computing career."
+> *"... the influence of role models is strong among women who don't study computing at college but then go on to pursue a computing career."*
 
 :::
 
@@ -344,26 +344,26 @@ R integrates aspects of coding and computing.
 
 ::: {.fragment}
 
-> I was taken aback at first but it has grown to be my favourite part of psychology
+> *I was taken aback at first but it has grown to be my favourite part of psychology.*
 
 :::
 
 ::: {.fragment}
 
-> Learnt many coding skills I didn't think I would be able to.
+> *Learnt many coding skills I didn't think I would be able to.*
 
 :::
 
 ::: {.fragment}
 
-> Learning R was difficult at times but overall I found it fun as it's a completely new and quite unexpected activity and the way it is taught to us is really engaging and quite satisfying
+> *Learning R was difficult at times but overall I found it fun as it's a completely new and quite unexpected activity and the way it is taught to us is really engaging and quite satisfying.*
 
 :::
 
 
 ::: {.fragment}
 
-> INJECT R INTO MY VEINS!!
+> *INJECT R INTO MY VEINS!!*
 
 :::
 
@@ -422,7 +422,7 @@ I feel as though psychology lures in innocent sweet children with its sweet and 
 
 ::: {.column width="40%"}
 
-> "... capture women's strong interest in problem-solving, especially around real-world and social issues." 
+> *"... capture women's strong interest in problem-solving, especially around real-world and social issues."*
 
 :::
 :::
@@ -501,7 +501,7 @@ business settings.
 
 ## Psychology and coding
 
-> "applying computing and coding to real societal problems can help change the world, which can be a powerful hook for girls and a magnet for women."
+> *"... applying computing and coding to real societal problems can help change the world, which can be a powerful hook for girls and a magnet for women."*
 
 
 - The skills acquired through learning `r rproj()` will be taught within the context of Psychology examples.
@@ -512,13 +512,13 @@ business settings.
 
 ::: {.fragment}
 
-> I really enjoyed the practicals and surprisingly found coding not that scary but yet interesting.
+> *I really enjoyed the practicals and surprisingly found coding not that scary but yet interesting.*
 
 :::
 
 ::: {.fragment}
 
-> I personally just really enjoyed learning R. I know this isn't something most students enjoy learning, but it has been one of my favourite parts of university so far and I am quite upset to part with it (for now!). 
+> *I personally just really enjoyed learning R. I know this isn't something most students enjoy learning, but it has been one of my favourite parts of university so far and I am quite upset to part with it (for now!).*
 
 :::
 
@@ -546,7 +546,7 @@ So, for some students, their interests and career desires lay hidden under a clo
 
 ## Role models
 
-> "62% of girls in high school who have had someone encourage them to study computing and coding say they are likely to major in it at college, compared to only 15% who have had no role model."
+> *"62% of girls in high school who have had someone encourage them to study computing and coding say they are likely to major in it at college, compared to only 15% who have had no role model."*
 
 
 ![](media/sussex_role_models.png){fig-align="center" width=500}
@@ -566,7 +566,7 @@ This may also help to challenge some of the stereotypes in male students
 
 :::{.fragment}
 
-> I used to have a panic attack every workshop last term and now I got 82!!!!!!!!! WTF When you said I’m capable of a 1st in this module I thought it was BS like there was no way that was going to happen. I’m shakinggggg, I think I’m gunna cry. THANK YOU (you are literally the best!!! the stats lecturer !!!! the best R explainer !!!! the best listener !!!! the absolute BEST!!!!) I wish I could give you hug!!!!! (IOU 1 HUG).
+> *I used to have a panic attack every workshop last term and now I got 82!!!!!!!!! WTF When you said I'm capable of a 1st in this module I thought it was BS like there was no way that was going to happen. I'm shakinggggg, I think I'm gunna cry. THANK YOU (you are literally the best!!! the stats lecturer !!!! the best R explainer !!!! the best listener !!!! the absolute BEST!!!!) I wish I could give you hug!!!!! (IOU 1 HUG).*
 
 :::
 
@@ -579,7 +579,7 @@ This may also help to challenge some of the stereotypes in male students
 
 ::: {.fragment}
 
-> When I began at Sussex, I didn’t realise that R was a part of my course. As a lazy student, I didn't even read my prospectus before joining, so it was a complete (unpleasant) surprise that I was studying statistics and coding. During secondary school, I barely scraped a C in Higher Maths GCSE. As such, I was absolutely terrified to learn that I now had to learn coding and statistics ... I now work as a Data Analyst in the R Programming Language. I love my job.
+> *I didn't realise that R was a part of my course. As a lazy student, I didn't even read my prospectus before joining, so it was a complete (unpleasant) surprise that I was studying statistics and coding. During secondary school, I barely scraped a C in Higher Maths GCSE. As such, I was absolutely terrified to learn that I now had to learn coding and statistics ... I now work as a Data Analyst in the R Programming Language. I love my job.*
 
 :::
 
@@ -592,7 +592,7 @@ What do they say about my colleagues?
 
 ## Role models: R-ladies^[[https://rladies.org/](https://rladies.org/)]
 
-> "... the influence of role models is strong among women who don't study computing at college but then go on to pursue a computing career."
+> *"... the influence of role models is strong among women who don't study computing at college but then go on to pursue a computing career."*
 
 :::{.fragment}
 
@@ -646,6 +646,7 @@ Ask yourself these questions
 - Do our training materials motivate and engage women?
 - Who are the role models inside and outside of my group?
 - Am I doing enough to challenge stereotypes around coding?
+- Can we do more outreach (STEM ambassadors)?
 
 
 
