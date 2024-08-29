@@ -11,39 +11,10 @@ execute:
 
 ```{r}
 library(tidyverse)
+library(ggrepel)
 
 
 here::here("helpers/discovr_helpers.R") |> source()
-```
-
-
-```{r}
-#| echo: false
-
-hesa_stats <- readr::read_csv(
-  "./data/sb265_figure_13.csv",
-  skip = 16,
-  col_names = c("Subject Area", "2019_Female", "2019_Male", "2019_Other", "2019_Total", "2020_Female", "2020_Male", "2020_Other", "2020_Unknown", "2020_Total", "2021_Female", "2021_Male", "2021_Other", "2021_Unknown", "2021_Total")) |> 
-  dplyr::filter(!grepl("Total", `Subject Area`)) |> 
-  tidyr::pivot_longer(
-    cols = `2019_Female`:`2021_Total`,
-    names_to = c("Year", ".value"),
-    names_pattern = "(.*)_(.*)"
-  ) |>
-  dplyr::select(-Unknown) |> 
-  dplyr::mutate(
-    `Subject Area` = gsub("[0-9]{2}\\s", "", `Subject Area`),
-    `Proportion female` = Female/Total
-  ) |> 
-  dplyr::arrange(desc(`Proportion female`)) |> 
-  dplyr::group_by(Year) |> 
-  dplyr::mutate(Rank = dense_rank(desc(`Proportion female`))) |> 
-  select(`Subject Area`, Year, Female, `Proportion female`, Rank) |> 
-  rename(
-    N = Female,
-    Proportion = `Proportion female`
-  ) |> 
-  ungroup()
 ```
 
 
@@ -91,17 +62,11 @@ In non-stem, over nearly 20 years a proportion of 0.8-0.9 are retained (so 10-20
 In STEM, retention is at about 0.7 (30% dropout) after 3 years, and close to 50% dropout over 10 years
 :::
 
-## 
 
-> "Programming has a sexism problem" ([Guest & Forbes, 2023](https://doi.org/10.31235/osf.io/3r2ez))
 
-::: {.fragment}
-- 
-:::
+## "Cracking the gender code"^[Accenture & Girls Who Code. (2016). Cracking the gender code. [www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code](https://www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code)]
 
-## 'Cracking the gender code'
-
-> *"Only by tailoring courses to girls' specific needs can we boost their commitment to computing."* Accenture (2016). [Cracking the gender code](https://www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code)
+> *"Only by tailoring courses to girls' specific needs can we boost their commitment to computing."* [Cracking the gender code](https://www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code)
 
 ::: columns
 ::: {.column width="60%"}
@@ -125,9 +90,16 @@ In STEM, retention is at about 0.7 (30% dropout) after 3 years, and close to 50%
 :::
 :::
 
-## Cracking the gender code
 
-![](media/gwc_report_fig1.png)
+##
+
+![](media/gwc_report_fig1.png){fig-align="center" width=800 }
+
+</br>
+
+:::{.footnote}
+Accenture & Girls Who Code. (2016). Cracking the gender code. [www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code](https://www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code)]
+:::
 
 ::: {.notes}
 Junior high = 10-14 years
@@ -215,8 +187,7 @@ problem-solving, especially around real-world and social issues."
 
 ::: {.fragment}
 
-- **Action 2**: Offer female students immersion programs
-  + Essentially, allow exposure to coding on non-coding courses and make it easy to switch.
+- **Action 2**: Offer female students immersion programs (allow exposure to coding on non-coding courses and make it easy to switch).
 
 :::
 
@@ -228,23 +199,40 @@ problem-solving, especially around real-world and social issues."
 
 :::
 
-## Recurring themes
+## 3 Recurring themes
 
 ::: {.fragment}
 ::: columns
-::: {.column width="50%"}
+::: {.column width="60%"}
 
-- **Make content engaging for women**
-  - The wider context of computing
-  - Teach within a more female-centric context
-  - Capture women's interests
+- **Exposure to coding in non-coding environments**
+  - Games, clubs
+  - Non-coding courses
 
 :::
 
 ::: {.column width="5%"}
 :::
 
-::: {.column width="45%"}
+::: {.column width="35%"}
+:::
+:::
+:::
+
+::: {.fragment}
+::: columns
+::: {.column width="60%"}
+
+- **Capture women's interests**
+  - Teach the wider context of computing
+  - Teach within a more female-centric context
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="35%"}
 
 :::
 :::
@@ -252,11 +240,11 @@ problem-solving, especially around real-world and social issues."
 
 ::: {.fragment}
 ::: columns
-::: {.column width="50%"}
+::: {.column width="60%"}
 
-- **Role models**
+- **Provide role models and mentors**
   - Challenge stereotypes
-  - More female teachers
+  - More female teachers/mentors
   - Inspiration
 
 :::
@@ -264,7 +252,7 @@ problem-solving, especially around real-world and social issues."
 ::: {.column width="5%"}
 :::
 
-::: {.column width="45%"}
+::: {.column width="35%"}
 :::
 :::
 :::
@@ -272,73 +260,160 @@ problem-solving, especially around real-world and social issues."
 
 ::: {.fragment}
 
-</br>
-
 :::{.callout-tip icon=false}
 ## {{< fa question >}} Question
 
-put something here
+Where does Psychology fit in?
 :::
 :::
 
-## HESA student data 2019-20^[Data from [www.hesa.ac.uk/data-and-analysis/students/what-study](https://www.hesa.ac.uk/data-and-analysis/students/what-study)]
+## {background-image="media/trojan_horse_small.jpg" background-size="cover"}
 
-::: {.panel-tabset}
+:::{.fragment .absolute top=50}
+:::{.callout-note icon=false}
+## {{< fa face-grin-hearts >}} Recommendation 1
 
-## 2019
+::: {.txt_300 .txt_white}
+Exposure to coding in non-coding environments
+:::
+:::
+:::
 
-```{r}
-#| echo: false
+:::{.notes}
+
+Psychology is a trojan horse for computing.
+You think you're getting a beautiful wooden horse full of psychology. You welcome it in, only for a bunch of R to jump out and stab you ....
+:::
 
 
-# uses custom functions style_tbl_head() and style_tbl_rows() to create javascript to style font and background colour of data table rows and header
+## The reality of studying psychology
 
-hesa_stats |>
-  filter(Year == "2019") |> 
-  dplyr::select(-Year) |> 
-  DT::datatable(style = 'default',
-                caption = "HE student enrolments by CAH level 1 subject (Women)",
-                options = list(pageLength = 10, rowCallback = style_tbl_rows()), 
-                callback = style_tbl_head(head_txt = "#ffffff", head_bg = h1_col)) |> 
-  DT::formatPercentage("Proportion", 2)
+![](../shared_media/images/tidyverse.png){.absolute top=450 left=650 width="150"}
+
+![](../shared_media/images/easystats_hex.png){.absolute top=450 left=900 width="150" }
+
+::: {.fragment}
+
+- 75% Psychology
+:::
+
+::: {.fragment}
+
+- 25% Statistics, research methods, statistical computing
+  - General R (`|>`, `here`, `knitr`)
+  - Computing (Functions, loops, `r quarto(scale = 0.3)`, Markdown)
+  - Distributions, sampling theory, probability
+  - Data viz (`ggplot2`, `GGally`)
+  - Descriptive statistics (`datawizard`, `dplyr`, `forcats`, `readr`, `tibble`, `tidyr`)
+  - Associations (`correlation`) 
+  - Gaussian linear models (`afex`, `broom`, `car`, `effectsize`, `emmeans`,  `ggfortify`, `lm()`, `modelbased`, `parameters`, `t.test()`)
+  - Logistic regression (`glm()`, `broom`)
+  - Mediation (`lavaan`)
+  - Robust methods (`robust`, `WRS2`)
+  - Factor analysis (`psych`)
+
+:::
+
+## Teach using interactive tutorials
+
+
+```{r, echo = F}
+knitr::include_url("https://discovr.rocks/discovr/", height = "600px")
+```
+
+##
+
+
+```{r, echo = F}
+knitr::include_url("https://milton-the-cat.rocks/learnr/r/discovr_11/", height = "600px")
+```
+
+
+##
+
+```{r, echo = F}
+knitr::include_url("media/model_answer_2023.html", height = "600px")
+```
+
+::: {.notes}
+R integrates aspects of coding and computing.
+::: 
+
+
+## Student quotes
+
+::: {.fragment}
+
+> I was taken aback at first but it has grown to be my favourite part of psychology
+
+:::
+
+::: {.fragment}
+
+> Learnt many coding skills I didn't think I would be able to.
+
+:::
+
+::: {.fragment}
+
+> Learning R was difficult at times but overall I found it fun as it's a completely new and quite unexpected activity and the way it is taught to us is really engaging and quite satisfying
+
+:::
+
+
+::: {.fragment}
+
+> INJECT R INTO MY VEINS!!
+
+:::
+
+
+## {background-image="../shared_media/images/pied_piper.png" background-size="cover"}
+
+
+<audio controls>
+  <source src="../shared_media/audio/symphony_clip.mp3" type="audio/mpeg">
+  <source src="../shared_media/audio/symphony_clip.ogg" type="audio/ogg"/>
+</audio>
+
+
+
+
+::: {.fragment .fade-in-then-out}
+![](../shared_media/images/speech_discover_ourselves.png){.absolute top=0 left=300 width="350"}
+![](../shared_media/images/speech_suckers.png){.absolute top=50 left=25 width="200"}
+:::
+
+
+:::{.fragment .absolute top=450 left=500}
+:::{.callout-note icon=false}
+## {{< fa face-grin-hearts >}} Recommendation 2
+
+::: {.txt_300 .txt_white}
+Capture women's interests
+:::
+:::
+:::
+
+:::{.notes}
+
+I was trying to think of a metafor for Psychology, and I keep coming back to the story of the pied piper. Probably because of the megadeth song.
+
+I feel as though psychology lures in innocent sweet children with its sweet and harmonious symphony only to lure them to the mountain of data science from which some will never return
+:::
+
+
+
+
+
+```{r, child = "hesa_data.qmd"}
+
 ```
 
 
 
-## 2020
 
-```{r}
-#| echo: false
-
-hesa_stats |> 
-  filter(Year == "2020") |> 
-  dplyr::select(-Year) |> 
-  DT::datatable(style = 'default',
-                caption = "HE student enrolments by CAH level 1 subject (Women)",
-                options = list(pageLength = 7, rowCallback = style_tbl_rows()), 
-                callback = style_tbl_head(head_txt = "#ffffff", head_bg = h1_col)) |> 
-  DT::formatPercentage("Proportion", 2)
-```
-
-## 2021
-
-```{r}
-#| echo: false
-
-hesa_stats |> 
-  filter(Year == "2021") |> 
-  dplyr::select(-Year) |> 
-  DT::datatable(style = 'default',
-                caption = "HE student enrolments by CAH level 1 subject (Women)",
-                options = list(pageLength = 7, rowCallback = style_tbl_rows()), 
-                callback = style_tbl_head(head_txt = "#ffffff", head_bg = h1_col)) |> 
-  DT::formatPercentage("Proportion", 2)
-```
-
-:::
-
-
-## Why do many women choose psychology?
+## Why might more women than men choose psychology?^[Su et al. (2009). *Psychological Bulletin*, 135(6), 859–884. [doi.org/10.1037/a0017364](https://doi.org/10.1037/a0017364)]
 
 ::: columns
 ::: {.column width="60%"}
@@ -359,6 +434,16 @@ Do women have strong interest in problem-solving, especially around real-world a
 
 Su et al. (2009) massive meta-analysis looking at differences in interests in men and women. Let's focus on the RIASEC model of vocational interests.
 
+Technical manuals for 47 interest inventories were used, yielding 503,188 respondents.
+
+Men prefer working with things and women prefer working with people, producing a large effect size (d = 0.93) on the Things–People dimension.
+On the Data-Ideas dimension there was a small effect towards women favouring ideas over data (d = -0.1)
+
+Men showed stronger Realistic (d = 0.84) and Investigative (d = 0.26) interests
+Women showed stronger Artistic (d = -0.35), Social (d = -0.68), and Conventional (d = -0.33) interests.
+
+Age effects: as age increases the sex differences on Things-People decrease as do differences on social interests.
+
 Diagram shows the main areas of model. Larger circles show larger pooled effect sizes representing male-female differences. The key finding is women are more interested in people, and men in things.
 
 
@@ -375,7 +460,7 @@ business settings.
 
 ## {background-video="/shared_media/video/social_media_bad_youtube.mp4" background-size="cover"}
 
-## Psychology is about people and problem solving!
+## Psychology is about people, problem solving & social issues
 
 ::: {.fragment}
 
@@ -414,88 +499,6 @@ business settings.
 
 
 
-## {background-image="../shared_media/images/pied_piper.png" background-size="cover"}
-
-
-<audio controls>
-  <source src="../shared_media/audio/symphony_clip.mp3" type="audio/mpeg">
-  <source src="../shared_media/audio/symphony_clip.ogg" type="audio/ogg"/>
-</audio>
-
-
-![](../shared_media/images/speech_discover_ourselves.png){.absolute top=0 left=300 width="350"}
-
-
-::: {.fragment}
-![](../shared_media/images/speech_suckers.png){.absolute top=50 left=25 width="200"}
-:::
-
-## The reality of studying psychology
-
-![](../shared_media/images/tidyverse.png){.absolute top=450 left=650 width="150"}
-
-![](../shared_media/images/easystats_hex.png){.absolute top=450 left=900 width="150" }
-
-::: {.fragment}
-
-- 75% Psychology
-:::
-
-::: {.fragment}
-
-- 25% Statistics, research methods, statistical computing
-  - General R (`|>`, `here`, `knitr`)
-  - Distributions, sampling theory, probability
-  - Data viz (`ggplot2`, `GGally`)
-  - Descriptive statistics (`datawizard`, `dplyr`, `forcats`, `readr`, `tibble`, `tidyr`)
-  - Associations (`correlation`) 
-  - Gaussian linear models (`afex`, `broom`, `car`, `effectsize`, `emmeans`,  `ggfortify`, `lm()`, `modelbased`, `parameters`, `t.test()`)
-  - Logistic regression (`glm()`, `broom`)
-  - Mediation (`lavaan`)
-  - Robust methods (`robust`, `WRS2`)
-  - Factor analysis (`psych`)
-
-:::
-
-## Teach using interactive tutorials
-
-
-```{r, echo = F}
-knitr::include_url("https://discovr.rocks/discovr/", height = "600px")
-```
-
-##
-
-
-```{r, echo = F}
-knitr::include_url("https://milton-the-cat.rocks/learnr/r/discovr_11/", height = "600px")
-```
-
-## Computing skills
-
-- **Coding**
-  - Functions, loops, data wrangling, data visualisation, reading/writing files, creating objects
-  - Version control
-- **Web skills**
-  - Build webpages using `r quarto(scale = 0.3)` and Markdown
-  - Can be customized with `html` and `css` 
-- **Applications**
-  - Build apps using [shiny](https://shiny.rstudio.com/)
-- **Presentations**
-  - These slides were built using `r quarto(scale = 0.3)`
-  
-  
-##
-
-```{r, echo = F}
-knitr::include_url("media/model_answer_2023.html", height = "600px")
-```
-
-::: {.notes}
-R integrates aspects of coding and computing.
-::: 
-
-
 ## Psychology and coding
 
 > "applying computing and coding to real societal problems can help change the world, which can be a powerful hook for girls and a magnet for women."
@@ -505,6 +508,88 @@ R integrates aspects of coding and computing.
 - Psychology is a science that looks to addresses societal and inter- and intra-personal problems.
 
 
+## Student quotes
+
+::: {.fragment}
+
+> I really enjoyed the practicals and surprisingly found coding not that scary but yet interesting.
+
+:::
+
+::: {.fragment}
+
+> I personally just really enjoyed learning R. I know this isn't something most students enjoy learning, but it has been one of my favourite parts of university so far and I am quite upset to part with it (for now!). 
+
+:::
+
+
+
+## {background-image="media/invisibility_cloak_small.jpg" background-size="cover"}
+
+:::{.fragment .absolute top=50}
+:::{.callout-note icon=false}
+## {{< fa face-grin-hearts >}} Recommendation 3
+
+::: {.txt_300 .txt_white}
+Provide role models and mentors
+:::
+:::
+:::
+
+:::{.notes}
+
+I need a more positive metaphor, so I'm going for a cloak of invisibiloity. Who doesn't like one of those?
+
+So, for some students, their interests and career desires lay hidden under a cloak of invisibility. they think they want a career in psychology but only because data science is hidden to them as an option. Mentors remove the invisibility cloak revealing options and confidence they never thought they had!
+:::
+
+
+## Role models
+
+> "62% of girls in high school who have had someone encourage them to study computing and coding say they are likely to major in it at college, compared to only 15% who have had no role model."
+
+
+![](media/sussex_role_models.png){fig-align="center" width=500}
+
+
+::: {.notes}
+
+Our undergraduates do not meet a make faculty member teaching stats/computing until autumn term of year 2 (where they meet me)
+
+Across their core methods modules, they are taught by 2 male faculty compared to 7 females (this is roughly in line with the ratio of 80% female intake).
+
+This may also help to challenge some of the stereotypes in male students
+
+:::
+
+## Student quotes
+
+:::{.fragment}
+
+> I used to have a panic attack every workshop last term and now I got 82!!!!!!!!! WTF When you said I’m capable of a 1st in this module I thought it was BS like there was no way that was going to happen. I’m shakinggggg, I think I’m gunna cry. THANK YOU (you are literally the best!!! the stats lecturer !!!! the best R explainer !!!! the best listener !!!! the absolute BEST!!!!) I wish I could give you hug!!!!! (IOU 1 HUG).
+
+:::
+
+:::{.fragment}
+
+> Yesterday, I had a technical interview where I was required to code a massive data set with 110,000 participants. I then had to report it and present it back in their board room to the CEO. Today... out of 5 finalist graduates... they chose me to be their new data analyst!!! I spoke to the CEO over the phone, and he commented that he couldn't believe I had been coding for only a couple of years, and that my work was far more advanced than any other graduate he has had - and that's because of you!! Taught by the best!
+
+:::
+
+
+::: {.fragment}
+
+> When I began at Sussex, I didn’t realise that R was a part of my course. As a lazy student, I didn't even read my prospectus before joining, so it was a complete (unpleasant) surprise that I was studying statistics and coding. During secondary school, I barely scraped a C in Higher Maths GCSE. As such, I was absolutely terrified to learn that I now had to learn coding and statistics ... I now work as a Data Analyst in the R Programming Language. I love my job.
+
+:::
+
+::: {.notes}
+
+What do they say about my colleagues?
+
+:::
+
+
 ## Role models: R-ladies^[[https://rladies.org/](https://rladies.org/)]
 
 > "... the influence of role models is strong among women who don't study computing at college but then go on to pursue a computing career."
@@ -512,6 +597,18 @@ R integrates aspects of coding and computing.
 :::{.fragment}
 
 ![](media/r_ladies_2024_small.png){fig-align="center" width=700}
+
+:::
+
+::: {.notes}
+
+What can you do within your company?
+
+Being mindful of not adding disproportionately to the workload of women
+
+- Recognise and celebrate women's achievements/roles as much as mens
+- Make sure people in junior roles are aware of women in senior roles
+- Look outside of your company for activities and opportunities that support women
 
 :::
 
@@ -539,27 +636,16 @@ Text analysis of descriptions of chocolate alongside ratings of it. So, data set
 Text cloud shows high ratings associated by lots of people with words balanced, complex, creamy. Low ratings associated with the words pastey, chemical, bitter.
 :::
 
-## Local role models
-
-> "62% of girls in high school who have had someone encourage them to study computing and coding say they are likely to major in it at college, compared to only 15% who have had no role model."
 
 
-![](media/sussex_role_models.png){fig-align="center" width=500}
+## Too long, didn't listen
 
+Ask yourself these questions
 
-# Too long, didn't listen
-
-- Important ways to encourage women into computing
-  - Contexts that are engaging for women
-  - Role models
-  
-- Psychology
-  - Predominantly female intake
-  - Large numbers of female faculty (role models)
-  - Involves topics/themes that naturally interest women
-  - Involves a lot of statistics and statistical computing
-  - At some institutions statistical computing involves software (`r rproj()`) that requires coding and computing skills.
-  - The `r rproj()` ecosystem is diverse, inclusive and full of brilliant rolw models
+- Are there women in non-coding roles who I could support to try coding?
+- Do our training materials motivate and engage women?
+- Who are the role models inside and outside of my group?
+- Am I doing enough to challenge stereotypes around coding?
 
 
 

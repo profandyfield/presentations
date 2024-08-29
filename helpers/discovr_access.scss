@@ -40,7 +40,7 @@ $codeFont: 'Fira Mono';
 /*-- scss:defaults --*/
 
 // colors
-$body-bg: $wht !default;
+$body-bg: $link !default;
 $body-color: $txt !default;
 $link-color: $link !default;
 $selection-bg: $txt !default;
@@ -85,6 +85,15 @@ $subtitle: $wht !default;
   color: $box
 }
 
+.reveal .slide div.callout-note {
+  border-left-color: $h1_col !important;
+}
+
+.reveal .slide div.callout-note.callout-style-default .callout-title {
+  background-color: lighten($h1_col, 40%);
+  color: $h1_col
+}
+
 /* hamburger colour */
 
 .reveal .slide-menu-button .fa-bars::before {
@@ -115,6 +124,10 @@ p.subtitle {
 }
 
 
+.txt_300 {
+    font-size: 300%;
+}
+
 .txt_xl {
     font-size: 150%;
 }
@@ -126,4 +139,8 @@ p.subtitle {
 .bold_col {
     color: $link;
     font-weight: bold;
+}
+
+.txt_white {
+    color: white;
 }
