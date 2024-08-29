@@ -97,7 +97,7 @@ In STEM, retention is at about 0.7 (30% dropout) after 3 years, and close to 50%
 
 </br>
 
-:::{.footnote}
+::: {.footnote}
 Accenture & Girls Who Code. (2016). Cracking the gender code. [www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code](https://www.accenture.com/us-en/about/inclusion-diversity/cracking-gender-code)
 :::
 
@@ -260,7 +260,7 @@ problem-solving, especially around real-world and social issues."*
 
 ::: {.fragment}
 
-:::{.callout-tip icon=false}
+::: {.callout-tip icon=false}
 ## {{< fa question >}} Question
 
 Where does Psychology fit in?
@@ -522,95 +522,7 @@ business settings.
 
 :::
 
-
-
-## {background-image="media/invisibility_cloak_small.jpg" background-size="cover"}
-
-:::{.fragment .absolute top=50}
-:::{.callout-note icon=false}
-## {{< fa face-grin-hearts >}} Recommendation 3
-
-::: {.txt_300 .txt_white}
-Provide role models and mentors
-:::
-:::
-:::
-
-:::{.notes}
-
-I need a more positive metaphor, so I'm going for a cloak of invisibiloity. Who doesn't like one of those?
-
-So, for some students, their interests and career desires lay hidden under a cloak of invisibility. they think they want a career in psychology but only because data science is hidden to them as an option. Mentors remove the invisibility cloak revealing options and confidence they never thought they had!
-:::
-
-
-## Role models
-
-> *"62% of girls in high school who have had someone encourage them to study computing and coding say they are likely to major in it at college, compared to only 15% who have had no role model."*
-
-
-![](media/sussex_role_models.png){fig-align="center" width=500}
-
-
-::: {.notes}
-
-Our undergraduates do not meet a make faculty member teaching stats/computing until autumn term of year 2 (where they meet me)
-
-Across their core methods modules, they are taught by 2 male faculty compared to 7 females (this is roughly in line with the ratio of 80% female intake).
-
-This may also help to challenge some of the stereotypes in male students
-
-:::
-
-## Student quotes
-
-:::{.fragment}
-
-> *I used to have a panic attack every workshop last term and now I got 82!!!!!!!!! WTF When you said I'm capable of a 1st in this module I thought it was BS like there was no way that was going to happen. I'm shakinggggg, I think I'm gunna cry. THANK YOU (you are literally the best!!! the stats lecturer !!!! the best R explainer !!!! the best listener !!!! the absolute BEST!!!!) I wish I could give you hug!!!!! (IOU 1 HUG).*
-
-:::
-
-:::{.fragment}
-
-> Yesterday, I had a technical interview where I was required to code a massive data set with 110,000 participants. I then had to report it and present it back in their board room to the CEO. Today... out of 5 finalist graduates... they chose me to be their new data analyst!!! I spoke to the CEO over the phone, and he commented that he couldn't believe I had been coding for only a couple of years, and that my work was far more advanced than any other graduate he has had - and that's because of you!! Taught by the best!
-
-:::
-
-
-::: {.fragment}
-
-> *I didn't realise that R was a part of my course. As a lazy student, I didn't even read my prospectus before joining, so it was a complete (unpleasant) surprise that I was studying statistics and coding. During secondary school, I barely scraped a C in Higher Maths GCSE. As such, I was absolutely terrified to learn that I now had to learn coding and statistics ... I now work as a Data Analyst in the R Programming Language. I love my job.*
-
-:::
-
-::: {.notes}
-
-What do they say about my colleagues?
-
-:::
-
-
-## Role models: R-ladies^[[https://rladies.org/](https://rladies.org/)]
-
-> *"... the influence of role models is strong among women who don't study computing at college but then go on to pursue a computing career."*
-
-:::{.fragment}
-
-![](media/r_ladies_2024_small.png){fig-align="center" width=700}
-
-:::
-
-::: {.notes}
-
-What can you do within your company?
-
-Being mindful of not adding disproportionately to the workload of women
-
-- Recognise and celebrate women's achievements/roles as much as mens
-- Make sure people in junior roles are aware of women in senior roles
-- Look outside of your company for activities and opportunities that support women
-
-:::
+## What can you do?
 
 ## Tidy Tuesday^[[https://juliasilge.com/blog/](https://juliasilge.com/blog/)]
 
@@ -636,6 +548,96 @@ Text analysis of descriptions of chocolate alongside ratings of it. So, data set
 Text cloud shows high ratings associated by lots of people with words balanced, complex, creamy. Low ratings associated with the words pastey, chemical, bitter.
 :::
 
+
+
+
+## {background-image="media/invisibility_cloak_small.jpg" background-size="cover"}
+
+:::{.fragment .absolute top=400}
+:::{.callout-note icon=false}
+## {{< fa face-grin-hearts >}} Recommendation 3
+
+::: {.txt_300 .txt_white}
+Provide role models and mentors
+:::
+:::
+:::
+
+:::{.notes}
+
+I need a more positive metaphor, so I'm going for a cloak of invisibiloity. Who doesn't like one of those?
+
+So, for some students, their interests and career desires lay hidden under a cloak of invisibility. they think they want a career in psychology but only because data science is hidden to them as an option. Mentors remove the invisibility cloak revealing options and confidence they never thought they had!
+:::
+
+
+## Role models
+
+> *"62% of girls in high school who have had someone encourage them to study computing and coding say they are likely to major in it at college, compared to only 15% who have had no role model."*
+
+
+![](media/sussex_role_models.png){fig-align="center" width=450}
+
+
+::: {.notes}
+
+Our undergraduates do not meet a make faculty member teaching stats/computing until autumn term of year 2 (where they meet me)
+
+Across their core methods modules, they are taught by 2 male faculty compared to 7 females (this is roughly in line with the ratio of 80% female intake).
+
+This may also help to challenge some of the stereotypes in male students
+
+:::
+
+## Student quotes
+
+::: {.fragment .fade-in-then-out .absolute top=100}
+
+> *I used to have a panic attack every workshop last term and now I got 82!!!!!!!!! WTF When you said I'm capable of a 1st in this module I thought it was BS like there was no way that was going to happen. I'm shakinggggg, I think I'm gunna cry. THANK YOU (you are literally the best!!! the stats lecturer !!!! the best R explainer !!!! the best listener !!!! the absolute BEST!!!!) I wish I could give you hug!!!!! (IOU 1 HUG).*
+
+:::
+
+::: {.fragment .fade-in-then-out .absolute top=100}
+
+> *Yesterday, I had a technical interview where I was required to code a massive data set with 110,000 participants. I then had to report it and present it back in their board room to the CEO. Today... out of 5 finalist graduates... they chose me to be their new data analyst!!! I spoke to the CEO over the phone, and he commented that he couldn't believe I had been coding for only a couple of years, and that my work was far more advanced than any other graduate he has had - and that's because of you!! Taught by the best!*
+
+:::
+
+
+::: {.fragment .absolute top=100}
+
+> *I didn't realise that R was a part of my course. As a lazy student, I didn't even read my prospectus before joining, so it was a complete (unpleasant) surprise that I was studying statistics and coding. During secondary school, I barely scraped a C in Higher Maths GCSE. As such, I was absolutely terrified to learn that I now had to learn coding and statistics ... I now work as a Data Analyst in the R Programming Language. I love my job.*
+
+:::
+
+::: {.notes}
+
+What do they say about my colleagues?
+
+:::
+
+
+## Role models: R-ladies^[[https://rladies.org/](https://rladies.org/)]
+
+> *"... the influence of role models is strong among women who don't study computing at college but then go on to pursue a computing career."*
+
+::: {.fragment}
+
+![](media/r_ladies_2024_small.png){fig-align="center" width=700}
+
+:::
+
+::: {.notes}
+
+What can you do within your company?
+
+Being mindful of not adding disproportionately to the workload of women
+
+- Recognise and celebrate women's achievements/roles as much as mens
+- Make sure people in junior roles are aware of women in senior roles
+- Look outside of your company for activities and opportunities that support women
+
+:::
 
 
 ## Too long, didn't listen
