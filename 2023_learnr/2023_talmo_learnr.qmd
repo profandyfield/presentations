@@ -1,0 +1,347 @@
+---
+title: "Using learnr to create interactive R tutorials"
+subtitle: "From the pinnacle to the pit"
+author: "Professor Andy Field"
+institute: "University of Sussex"
+format: 
+  revealjs:
+    code-fold: true
+execute: 
+  eval: true
+---
+
+```{r}
+
+here::here("helpers/discovr_helpers.R") |> source()
+
+library(emo)
+library(here)
+library(kableExtra)
+library(tidyverse)
+```
+
+##  {background-video="../shared_media/video/andy_dwyer_is_your_name_andy.mp4"}
+
+## Andy's task
+
+::: fragment
+### Mission impossible
+
+-   Teach statistics/R to \~100 PG students of mixed ability (2017-present)
+-   Teach statistics/R to 600+ UG students of mixed ability (2019-present)
+-   Large practical classes (50+)
+-   Students with work/home demands on time
+
+![](../shared_media/images/rick_morty_the-scream.png){.absolute top="50" right="50" width="200" height="200"}
+:::
+
+::: fragment
+### `learnr` to the rescue
+
+-   Self-paced flipped classroom (sort of)
+-   Promotes active learning
+-   Quizzes for formative assessment
+-   Peer-based learning within practicals
+
+![](../shared_media/images/rick_morty_happy.png){.absolute top="300" right="50" width="200" height="200"}
+:::
+
+##  {background-video="../shared_media/video/andy_dwyer_didn't_think_this_through.mp4"}
+
+## What is `learnr`?
+
+![](../shared_media/images/learnr_hex.png){.absolute top="50" left="300" width="500"}
+
+## The `learnr` package (Schloerke, Allaire & Borges, 2018)? 
+
+::: {.callout-note icon="false"}
+## learnr
+
+-   A package for `r rproj()` to write interactive tutorials using `r rproj()` Markdown
+-   [rstudio.github.io/learnr/](https://rstudio.github.io/learnr/)
+:::
+
+. . .
+
+### Tutorials can contain
+
+-   Anything you can write in markdown (text, figures, equations etc.).
+-   Code exercises (interactive windows in which R code can be written and executed)
+-   Quizzes (MCQs, Parson's problems)
+-   Videos from YouTube and Vimeo
+-   Interactive `shiny` components
+
+. . .
+
+### Personalize style with CSS
+
+-   see [Allison Horst's post](https://education.rstudio.com/blog/2020/05/learnr-for-remote/)
+
+. . .
+
+### Tutorials can be deployed
+
+-   On a shiny server (own or Posit)
+-   In a self-contained `r rproj()` package
+
+## 
+
+```{r}
+#| echo: false
+#| eval: true
+
+knitr::include_url("https://milton-the-cat.rocks/learnr/r/ggplot_layers/", height = "600px")
+```
+
+::: notes
+Let's talk about deployment
+:::
+
+# Deploying learnr tutorials
+
+##  {background-video="../shared_media/video/andy_dwyer_no_idea_what_i'm_doing.mp4"}
+
+## Shiny server
+
+::: fragment
+### A personal server involves
+
+-   Getting a Virtual Private Server (VPS) and domain name
+-   Learning enough UNIX to do UNIX-y things
+-   Installing Shiny Server
+-   A sore face from repeatedly banging it against your desk
+-   A sense of wonderment when it finally works
+:::
+
+::: fragment
+### A university Shiny server involves
+
+-   Someone else doing all that complicated stuff
+:::
+
+::: fragment
+### Posit Shiny server
+
+-   Shiny server run by Posit at [www.shinyapps.io](https://www.shinyapps.io)
+:::
+
+::: fragment
+### POSIT cloud
+
+-   Server run by Posit (formerly RStudio)
+-   Students get an instance of RStudio on the cloud
+-   Deploy tutorials on the server as stand alone documents, or as a package.
+-   Everyone has access
+
+![](../shared_media/images/posit_cloud_trans.png){.absolute top="400" left="600" width="400"}
+:::
+
+## Shiny server 
+
+::: fragment
+### Advantages
+
+-   You can use advanced features of `learnr` if you're clever enough (which I'm not)
+-   You can tweak/correct tutorials without students needing to re-install
+-   You're in control (no reliance on student tech/expertise)
+:::
+
+::: fragment
+### Disadvantages of a personal server
+
+-   You are in control!
+    -   Having your own shiny server is the road to madness
+    -   Constant fear that the server will fail and you can't fix it
+-   It costs you money to run. You are literally paying to do your job.
+:::
+
+::: fragment
+### Disadvantages of a university server
+
+-   You're not in control: reliant on ITS to do stuff
+-   You've met University computing facilities right?
+:::
+
+::: fragment
+### Disadvantages of Posit cloud/www.shinyapps.io
+
+-   Cost (they are expensive)
+-   But, Posit cloud has lots of other teaching benefits.
+:::
+
+## Deployment: Package 
+
+![](../shared_media/images/adventr_hex.png){.absolute top="0" right="200" width="150" height="150"}
+
+![](../shared_media/images/discovr_hex.png){.absolute top="160" right="200" width="150" height="150"}
+
+-   The `adventr` package [github.com/profandyfield/adventr](https://github.com/profandyfield/adventr)
+
+-   The `discovr` package [github.com/profandyfield/discovr](https://github.com/profandyfield/discovr)
+
+-   It involved
+
+    -   Learning how to write an `r rproj()` package
+    -   Learning how to use GitHub or CRAN
+
+::: fragment
+-   Advantages
+    -   Doesn't rely on a server that you don't understand how to fix
+    -   Relies on CPU of individual computer, so computing resources not an issue
+    -   Integrates nicely with the RStudio tutorials pane
+    -   No financial cost
+:::
+
+::: fragment
+-   Disadvantages
+    -   You can't use advanced `learnr` features (i.e. store assessment data, check code on the fly)
+    -   Can't update/correct tutorials without students needing to reinstall
+    -   You have to learn how to write a package
+:::
+
+# Mistakes I have made ...
+
+##  {background-video="../shared_media/video/andy_dwyer_different_years_small.mp4"}
+
+## Using a flipped classroom 
+
+-   PG (100 \< *N* \< 120) students work at their own pace in practical classes but complete at home
+-   UG (550 \< *N* \< 650) students do tutorials at home **before** the practical class
+
+::: fragment
+### The good
+
+-   Students work at their own pace (helps with mixed abilities)
+-   PG: in class, students worked in groups and helped each other
+-   PG: in class students get personalized feedback on the things that confuse them
+:::
+
+::: fragment
+### The bad
+
+-   UG: With no in class element, a portion of students don't do them (even though we have weekly connected assessments)
+:::
+
+::: fragment
+### The ugly
+
+-   UG: The set up is conducive to students disappearing without trace
+:::
+
+## A solution? 
+
+-   For UGs we switched (2021) to the PG mode of students working through tutorials in class.
+-   Adopted Posit cloud
+-   Mini-assessments linked to tutorials
+
+::: fragment
+### The good
+
+-   Posit cloud was game changing for our stress levels
+-   Less disengagement
+-   Students who previously struggled started to 'get it'
+:::
+
+::: fragment
+### The bad
+
+-   UG: We have a hybrid model, so during 'online weeks' students still effectively are using a flipped classroom
+:::
+
+::: fragment
+### The ugly
+
+-   Students still disappear without trace
+:::
+
+## Disconnection 
+
+::: fragment
+### Working in the tutorial environment creates a disconnect with `r rproj()`
+
+-   Students practice code, but lose sight of using `r rproj()`
+-   It's difficult to teach basic workflow practices within the tutorial (e.g., code exercises are self-contained and don't remember what the student has done)
+:::
+
+::: fragment
+### Students copy code from solutions
+
+-   Students don't actively learn how to generate code
+-   If you don't have solutions that students can copy, it will take them 10 years to complete each tutorial
+:::
+
+## Disconnected workflow {background="white"}
+
+![](media/r_rstudio_quarto.jpg)
+
+## Minimizing disconnection 
+
+::: fragment
+### Workflow workshops
+
+-   Getting data in and out of `r rproj()`
+-   Installing and loading packages
+-   Using RStudio Project files
+-   Quarto and RMarkdown
+:::
+
+::: fragment
+### Quarto learning journal
+
+-   Use tutorials in parallel with RStudio (i.e. have two sessions running)
+    -   Session 1: runs the tutorial
+    -   Session 2: students keep a learning journal (in Quarto) where they make notes/reproduce some exercises.
+    -   Improves the connection between the tutorials and using `r rproj()`
+:::
+
+## Disconnected workflow {background="white"}
+
+![](media/quarto_render_doc.jpg)
+
+## Minimizing disconnection 
+
+### Workflow workshops
+
+-   Getting data in and out of `r rproj()`
+-   Installing and loading packages
+-   Using RStudio Project files
+-   Quarto and RMarkdown
+
+### Quarto learning journal
+
+-   Use tutorials in parallel with RStudio (i.e. have two sessions running)
+    -   Session 1: runs the tutorial
+    -   Session 2: students keep a learning journal (in Quarto) where they make notes/reproduce some exercises.
+    -   Improves the connection between the tutorials and using `r rproj()`
+
+### Graduated hints
+
+-   Using graduated hints rather than going straight to the solution.
+-   Have blanks in the hints/solutions that students have to fill in to encourage active learning
+
+## Graduated hints
+
+```{r}
+#| echo: false
+#| eval: true
+
+knitr::include_url("https://milton-the-cat.rocks/learnr/r/discovr_11/#section-exploring-the-data-1", height = "600px")
+```
+
+## Too long, didn't listen 
+
+-   `learnr` is a powerful tool for creating rich, interactive teaching materials.
+-   If you can use RMarkdown then it's fairly easy to write a tutorial.
+-   Unless you love Unix or your institution runs a Shiny server, deploy as an `r rproj()` package.
+-   Use a workflow that ensures students are practising the tutorial material outside of the tutorial environment.
+
+### Thanks 
+
+To the members of the methods team at Sussex who do fantastic work. My views may or may not reflect theirs (in alphabetical order).
+
+-   Lincoln Colling [github.com/ljcolling](https://github.com/ljcolling)
+-   Vlad Costin [profiles.sussex.ac.uk/p323096-vlad-costin](https://profiles.sussex.ac.uk/p323096-vlad-costin)
+-   Danielle Evans [github.com/de84sussex](https://github.com/de84sussex)
+-   Jennifer Mankin [profiles.sussex.ac.uk/p351056-jennifer-mankin](https://profiles.sussex.ac.uk/p351056-jennifer-mankin)
+-   Martina Sladekova [www.martinasladek.co.uk/](https://www.martinasladek.co.uk/)
+-   Jenny Terry [profiles.sussex.ac.uk/p161810-jenny-terry](https://profiles.sussex.ac.uk/p161810-jenny-terry)

@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,300i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=audiowide&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono&display=swap);
+
+
+// Primary/body text
+$mainFont: 'Montserrat', sans-serif;
+$mainFontSize: 20px;
+$mainColor: #3F3F3F;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Audiowide', Impact, sans-serif;
+$headingColor: #2C5577;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$headingFontWeight: normal;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 2.00em;
+$heading2Size: 1.55em;
+$heading3Size: 1.25em;
+$heading4Size: 1.00em;
+
+$codeFont: 'Fira Mono';
+
+/*-- scss:defaults --*/
+
+// colors
+$body-bg: #f0f1eb !default;
+$body-color: #000 !default;
+$link-color: #E74885 !default;
+$selection-bg: #26351c !default;
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
+
+.reveal .slide-logo {
+  height: 100px !important;
+  width: 100px!important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+// start using css here
+
+.title {
+  font-size: 50px !important;
+  color: white !important;
+}
+
+.subtitle {
+  font-size: 40px;
+  color: white;
+}
+
+.author {
+  font-size: 30px;
+  color: white;
+}
+
+.institute {
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+}
+
+
+
+.txt_xl {
+    font-size: 150%;
+}
+
+.txt_l {
+    font-size: 125%;
+}
+
+
+.tip {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #136CB9;
+  background-color: #136CB9;
+  background-color: rgba(19, 108, 185, 0.1);
+  color: #2C5577;
+}
+
+/* Pedagogic boxes */
+
+.tip {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #136CB9;
+  background-color: #136CB9;
+  background-color: rgba(19, 108, 185, 0.1);
+  color: #2C5577;
+}
+
+
+.note {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #f3e2c4;
+  background-color: #f3e2c4;
+  background-color: rgba(243, 226, 196, 0.1);
+  color: #775418;
+}
+
+.warning {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #CA3E34;
+  background-color: #CA3E34;
+  background-color: rgba(145, 45, 37, 0.1);
+  color: #912D25;
+}
+
+.infobox {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #E8EAE5;
+  background-color: #E8EAE5;
+  background-color: rgba(232, 234, 229, 0.95);
+  color: #2F4F4F;
+}
+
+.whitebox {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.70);
+  color: #2C5577;
+}
+
+.whitebox9 {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.90);
+  color: #2C5577;
+}
+
+.drkbox {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #3F3F3F;
+  background-color: #3F3F3F;
+  background-color: rgba(63, 63, 63, 0.70);
+  color: #FFFFFF;
+}
+
+.blubox {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #15224c;
+  background-color: #15224c;
+  background-color: rgba(21, 34, 76, 0.70);
+  color: #FFFFFF;
+}

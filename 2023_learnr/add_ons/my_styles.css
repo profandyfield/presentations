@@ -1,0 +1,106 @@
+.eq_lrge {
+    font-size: 150%;
+}
+
+.eq_med {
+    font-size: 125%;
+}
+
+.eq_sm {
+    font-size: 90%;
+}
+
+
+
+/* Pedagogic boxes */
+
+.tip {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #136CB9;
+  background-color: #136CB9;
+  background-color: rgba(19, 108, 185, 0.1);
+  color: #2C5577;
+}
+
+
+.note {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #f3e2c4;
+  background-color: #f3e2c4;
+  background-color: rgba(243, 226, 196, 0.1);
+  color: #775418;
+}
+
+.warning {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #CA3E34;
+  background-color: #CA3E34;
+  background-color: rgba(145, 45, 37, 0.1);
+  color: #912D25;
+}
+
+.infobox {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #E8EAE5;
+  background-color: #E8EAE5;
+  background-color: rgba(232, 234, 229, 0.95);
+  color: #2F4F4F;
+}
+
+.whitebox {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.70);
+  color: #2C5577;
+}
+
+.whitebox9 {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.90);
+  color: #2C5577;
+}
+
+.drkbox {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #3F3F3F;
+  background-color: #3F3F3F;
+  background-color: rgba(63, 63, 63, 0.70);
+  color: #FFFFFF;
+}
+
+.blubox {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #15224c;
+  background-color: #15224c;
+  background-color: rgba(21, 34, 76, 0.70);
+  color: #FFFFFF;
+}
+
+/* style tables */
+
+/* table without stripes and grey background*/
+<style>
+  div.greytble td:nth-child(1){border:none; text-align: center;}
+  div.greytble td:nth-child(2){border:none; text-align: left;}
+  div.greytble tr:nth-child(n) {border:none; background-color: rgba(34, 34, 34, 0.7);}
+</style>
+
+/* table without stripes and grey background*/
+<style>
+  div.whitetble
+  div.whitetble td:nth-child(1){text-align: center;}
+  div.whitetble td:nth-child(2){text-align: left;}
+  div.whitetble tr:nth-child(n) {background-color: #ffffff;}
+</style>
+
