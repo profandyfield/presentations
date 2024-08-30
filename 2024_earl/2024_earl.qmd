@@ -2,6 +2,7 @@
 title: "Narrowing the gender gap in computing"
 subtitle: "Psychology, R, invisibility cloaks, the Pied Piper and a Trojan horse"
 author: "Andy Field"
+institute: "University of Sussex"
 format: 
   revealjs:
     code-fold: true
