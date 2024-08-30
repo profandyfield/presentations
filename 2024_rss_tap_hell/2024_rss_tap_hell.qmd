@@ -1,0 +1,258 @@
+---
+title: "Using `learnr` and `gradethis` to create and mark interactive assessments"
+subtitle: "The highway to hell"
+author: "Andy Field, Danielle Evans, Martina Sladekova"
+institute: "University of Sussex"
+format: 
+  revealjs:
+    code-fold: false
+execute: 
+  eval: true
+---
+
+```{r}
+library(tidyverse)
+here::here("helpers/discovr_helpers.R") |> source()
+```
+
+
+## Too long, didn't listen
+
+
+{{< video https://youtu.be/l482T0yNkeo start="50" width="100%" height="85%" >}}
+
+
+## Too long, didn't listen
+
+::: {.fragment .fade-in-then-out .absolute top=100}
+
+
+> *Technology is the campfire around which we tell our stories.*
+>
+> (Laurie Anderson)
+
+:::
+
+::: {.fragment .absolute top=100}
+
+
+> *Technology is the campfire around which we ~~tell our stories~~ self-immolate.*
+>
+> (~~Laurie Anderson~~ Andy Field)
+
+:::
+
+## The Mission
+
+::: fragment
+### The past
+
+- Pen and paper exams (pre-covid)
+- MCQ exams (post-covid)
+- Reports
+- Huge marking bruden
+
+:::
+
+::: fragment
+### Wishlist
+
+- Assesses coding 
+- Assesses statistics knowledge
+- Auto-marked
+- Not too burdensome for students (48-hour TAP)
+
+:::
+
+::: fragment
+
+![](../shared_media/images/learnr_hex.png){.absolute top="50" left="450" width="300"}
+
+:::
+
+## The `learnr` package (Aden-Buie, Schloerke, Allaire & Rossell Hayes, 2024)? 
+
+::: {.callout-note icon="false"}
+## learnr
+
+-   A package for `r rproj()` to write interactive tutorials using `r rproj()` Markdown
+-   [rstudio.github.io/learnr/](https://rstudio.github.io/learnr/)
+:::
+
+
+::: fragment
+
+### Tutorials can contain
+
+-   Anything you can write in markdown (text, figures, equations etc.).
+-   Code exercises (interactive windows in which `r rproj()` code can be written and executed)
+-   Quizzes (MCQs, Parson's problems)
+-   Interactive `shiny` components
+:::
+::: fragment
+### Tutorials can be deployed
+
+-   On a shiny server (own or Posit)
+-   In a self-contained `r rproj()` package
+:::
+
+## The `gradethis` package (Aden-Buie, Chen, Grolemund, Rossell-Hayes & Schloerke, 2024)
+
+::: {.callout-note icon="false"}
+## gradethis
+-   A package for `r rproj()` to evaluate code submitted to a `learnr` tutorial
+-   [rstudio.github.io/gradethis/](https://github.com/rstudio/gradethis)
+:::
+
+::: {.panel-tabset}
+### `task`
+
+```{r task_1_4}
+#| eval: false
+#| echo: true
+
+lyric_lm <- lm(XXXX ~ XXXX, data = XXXX)
+anova(XXXX)
+```
+
+### `task-solution`
+
+```{r task_1_4-solution}
+#| eval: false
+#| echo: true
+
+lyric_lm <- lm(smarties ~ lyric, data = lyrics_tib)
+anova(lyric_lm)
+```
+
+### `task-check`
+
+```{r task_1_4-check}
+#| eval: false
+#| echo: true
+
+grade_this_code(correct = correct_feedback, incorrect = incorrect_feedback)
+```
+
+:::
+
+## Example
+
+```{r}
+#| echo: false
+#| eval: true
+
+knitr::include_url("https://milton-the-cat.rocks/learnr/r/tap_sample_web/#section-scenario-1", height = "600px")
+```
+
+::: notes
+Let's talk about deployment
+:::
+
+## Deploying the assessments
+
+-   POSIT cloud: Server run by Posit
+-   Students get an instance of RStudio on the cloud
+-   Deploy assessment on the server as
+  - Stand alone documents (TAP 01)
+  - An `r rproj()` package (TAP 02).
+
+![](../shared_media/images/posit_cloud_trans.png){.absolute top="100" left="650" width="300"}
+
+::: fragment
+![](media/animal_drum.gif){width="400"}
+:::
+
+## During TAP 01
+
+::: {layout="[[0.25,0.75], [0.25,0.75]]"}
+
+:::{.fragment}
+::: {style="text-align:center;"}
+![Danielle](media/muppet_paper_bag.gif){height="210"}
+:::
+:::
+
+:::{.fragment}
+::: {style="text-align:center;"}
+![Andy](media/beaker.gif){height="210"}
+:::
+:::
+:::{.fragment}
+::: {style="text-align:center;"}
+![Martina](media/typing_kermit.gif){height="210"}
+:::
+:::
+:::
+
+## Deploy as a document
+
+![Inside Posit Cloud](media/exploding_server.gif){height="500"}
+
+::: {.notes}
+When you deploy as a document, this happens.
+:::
+
+## During TAP 02
+
+![Andy, Danielle, Martina in happier times](media/puppy_yawn.gif){height="500"}
+
+## The positives 
+
+![](media/failed_high_five.gif){.absolute top="300" right="0" width="450"}
+
+::: fragment
+
+- Once we figured out deployment it worked well
+
+:::
+::: fragment
+
+- Marking
+  - Students click a button to download an encoded file that they submit
+  - The decoded file is mainly automarked
+  - Text answers had to be human marked, but it was quick
+
+:::
+::: fragment
+
+- Student experience
+  - Mostly good
+  - Marks were comparable to previous years
+
+:::
+
+## The (not so) positives 
+
+:::columns
+
+::: {.column width="40%"}
+::: fragment
+
+- Preparation
+  - The assessments take ages to write ... seriously *ages*
+  - Have to code `gradethis` for every eventuality
+  - Feels a bit detached from using `r rproj()` in the wild
+:::
+
+::: fragment
+- Student experience
+  - A few incidents of students claiming to lose work
+    - User error or Posit cloud error?
+  - A few students submitted the wrong file
+:::
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+::: fragment
+
+- Staff experience
+
+![](media/crying.gif){width="500"}
+:::
+:::
+
+
