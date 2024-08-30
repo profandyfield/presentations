@@ -1,0 +1,39 @@
+---
+title: "The Student Experience"
+author: "Andy Field"
+institute: "University of Sussex"
+format: 
+  revealjs:
+    code-fold: true
+execute: 
+  eval: true
+---
+
+```{r}
+library(tidyverse)
+here::here("helpers/discovr_helpers.R") |> source()
+```
+
+
+## 
+
+> *Technology is the campfire around which we tell our stories.* (Laurie Anderson)
+
+
+
+
+## The talks
+
+:::{.incremental}
+
+- Danielle Evans: using technology to engage students
+- Lisa DeBruine: Using data simulation in the classroom
+- Me: Using `learnr` and `gradethis` to create and mark interactive assessments
+- Martina Sladekova: Using shiny for efficient marking and feedback
+- Richard Morey: Automated assessment using `flexTeaching`
+
+:::
+
+
+
+
