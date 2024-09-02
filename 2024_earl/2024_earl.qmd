@@ -29,9 +29,9 @@ Image from [Guest, O., & Forbes, S. H. (2023). Teaching coding inclusively: if t
 
 ::: {.notes}
 
-Ada Lovelace: Creating the first computer program
-Grace Hopper: Inventing the compiler
-Frances 'Betty' Snyder Holberton, Jean Jennings Bartik, Kathleen “Kay” McNulty Mauchly Antonelli, Marlyn Wescoff Meltzer, Ruth Lichterman Teitelbaum and Frances Bilas Spence: programmers of the ENIAC computer (a secret US Army project during World War II)
+Ada Lovelace (1840s): Creating (arguably) the first computer program. Worked with Charles Babbage on his proposed mechanical general-purpose computer, the Analytical Engine.
+Grace Hopper (1950s): Inventing the compiler
+Frances 'Betty' Snyder Holberton, Jean Jennings Bartik, Kathleen 'Kay' McNulty Mauchly Antonelli, Marlyn Wescoff Meltzer, Ruth Lichterman Teitelbaum and Frances Bilas Spence (1940s): programmers of the ENIAC computer (a secret US Army project during World War II)
 
 :::
 
