@@ -47,10 +47,10 @@ here::here("helpers/discovr_helpers.R") |> source()
 ::: fragment
 ### The past
 
-- Pen and paper exams (pre-covid)
-- MCQ exams (post-covid)
+- Pen and paper exams (pre-COVID)
+- MCQ exams (post-COVID)
 - Reports
-- Huge marking bruden
+- Huge marking burden
 
 :::
 
@@ -252,6 +252,7 @@ When you deploy as a document, this happens.
 - Staff experience
 
 ![](media/crying.gif){width="500"}
+:::
 :::
 :::
 
