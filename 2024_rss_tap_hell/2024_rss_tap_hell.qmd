@@ -16,10 +16,7 @@ here::here("helpers/discovr_helpers.R") |> source()
 ```
 
 
-## Too long, didn't listen
-
-
-{{< video https://youtu.be/l482T0yNkeo start="50" width="100%" height="85%" >}}
+## {background-video="../shared_media/video/acdc_highway_to_hell_chorus.mp4"}
 
 
 ## Too long, didn't listen
