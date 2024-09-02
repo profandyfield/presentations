@@ -19,7 +19,7 @@ here::here("helpers/discovr_helpers.R") |> source()
 ## {background-video="../shared_media/video/acdc_highway_to_hell_chorus.mp4"}
 
 
-## Too long, didn't listen
+## Too long, won't listen
 
 ::: {.fragment .fade-in-then-out .absolute top=100}
 
