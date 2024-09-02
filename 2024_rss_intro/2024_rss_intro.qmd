@@ -1,5 +1,5 @@
 ---
-title: "The Student Experience"
+title: "The ~~Student~~ Experience of R"
 author: "Andy Field"
 institute: "University of Sussex"
 format: 
@@ -15,24 +15,121 @@ here::here("helpers/discovr_helpers.R") |> source()
 ```
 
 
-## 
+##  The student experience^[Guest & Forbes (2023). Teaching coding inclusively: if this, then what? [doi.org/10.31235/osf.io/3r2ez](https://doi.org/10.31235/osf.io/3r2ez)] 
+
+::: fragment
+
+> Students want or need graphical user interfaces (GUIs), otherwise they do not enjoy the course and/or they cannot learn as well.
+
+:::
+
+::: fragment
+
+> We cannot teach them to code because scoping (or any other programming concept) is difficult and time-consuming to learn.
+
+:::
+
+::: fragment
+
+> Teaching students to code is zero-sum, so that means removing other parts of the course.
+
+:::
+
+::: fragment
+
+> You cannot teach them how to code during a stats class because some students will have a "handicap" if they have not coded before.
+
+:::
+
+::: {.notes}
+Guest & Forbes (2023) identify several pervasive and unhelpful dialogues around learning programming
+
+I've picked out 4 of the dialogues identifies by Guest and Forbes that are particularly relevant to this talk
+
+We certainly experienced all of these (or close variants) when we converted our syllabus from SPSS to R.
+
+The 'they won't be able to cope' narrative was particularly strong.
+:::
+
+## Perceptions of students by colleagues
+
+![A Typical student according to some colleagues](media/muppet_scream.gif){height="500"}
+
+## My perception of students
+
+![A Typical student according to me](media/piggy_jail.gif){height="500"}
+
+::: {.notes}
+
+I tend to think that with the correct support and scaffolding students will meet the expectations you set them.
+:::
+
+## Reality
+
+![2024 Marks on Discovering Statistics](media/ds_exam_marks_2024.png){height="500"}
+
+
+:::{.notes}
+
+Students do fine 2024 [2023 in brackets]
+
+Fail 	7.69% 	[13.54%]
+Pass 	10.11% 	[21.82%]
+2:ii 	18.68% 	[24.85%]
+2:i 	26.59% 	[21.82%]
+First 36.92% 	[17.98%]
+
+:::
+
+## What does the 'right' support mean?
+
+:::{.incremental}
+
+- Engagement
+- Building strong conceptual understanding
+
+:::
+
+::: fragment
+
+- Assessment
+  - Capture students' abilities
+  - Efficient to implement and mark
+
+
+![](media/beaker_electrocute.gif){.absolute top="300" height="300"}
+:::
+
+## The talks
 
 > *Technology is the campfire around which we tell our stories.* (Laurie Anderson)
 
 
+:::{.fragment}
 
-
-## The talks
-
-:::{.incremental}
-
-- Danielle Evans: using technology to engage students
-- Lisa DeBruine: Using data simulation in the classroom
-- Me: Using `learnr` and `gradethis` to create and mark interactive assessments
-- Martina Sladekova: Using shiny for efficient marking and feedback
-- Richard Morey: Automated assessment using `flexTeaching`
+- Engagement
+  - **Danielle Evans**: using technology to engage students
 
 :::
+
+:::{.fragment}
+
+- Building strong conceptual understanding
+  - **Lisa DeBruine**: Using data simulation in the classroom
+
+:::
+
+:::{.fragment}
+
+- Assessment
+  - **Me**: Using `learnr` and `gradethis` to create and mark interactive assessments
+  - **Martina Sladekova**: Using shiny for efficient marking and feedback
+  - **Richard Morey**: Automated assessment using `flexTeaching`
+
+:::
+
+
+
 
 
 
