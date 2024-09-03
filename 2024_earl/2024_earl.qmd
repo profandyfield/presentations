@@ -459,7 +459,7 @@ business settings.
 :::
 
 
-## {background-video="/shared_media/video/social_media_bad_youtube.mp4" background-size="cover"}
+## {background-video="../shared_media/video/social_media_bad_youtube.mp4" background-size="cover"}
 
 ## Psychology is about people, problem solving & social issues
 
