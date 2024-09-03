@@ -315,11 +315,11 @@ You think you're getting a beautiful wooden horse full of psychology. You welcom
 
 :::
 
-## Teach using interactive tutorials
+## Teach using interactive tutorials^[The `discovr` package [www.discovr.rocks/discovr/](https://www.discovr.rocks/discovr/)]
 
 
 ```{r, echo = F}
-knitr::include_url("https://discovr.rocks/discovr/", height = "600px")
+knitr::include_url("https://discovr.rocks/discovr/", height = "500px")
 ```
 
 ##
