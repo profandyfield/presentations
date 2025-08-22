@@ -6,9 +6,13 @@ format:
     title-block-banner: "#7B67A2"
     toc: true
     toc_float: true
-    theme: [helpers/discovr_access.scss]
+    theme: [helpers/ds2_theme.scss]
 ---
 
+
+## 2025
+
+- [My adventure in statistics](2025_rss_ais/2025_rss_ais.html). The Royal Statistical Society International Conference, Edinburgh, UK, September 4<sup>th</sup>. 
 
 ## 2024
 

@@ -1,0 +1,329 @@
+---
+title: "My adventure in statistics"
+author: "Andy Field"
+institute: "University of Sussex"
+format: 
+  revealjs:
+    code-fold: false
+    highlight: "kate"
+    theme: [../helpers/ds2_theme.scss]
+revealjs-plugins:
+  - editable
+filters:
+  - editable
+execute: 
+  eval: true
+---
+
+```{r}
+library(tidyverse)
+here::here("helpers/discovr_helpers.R") |> source()
+```
+
+
+
+## Books, books, books
+
+![](../shared_media/images/ais_02_cover.png){.absolute width=327.299px height=430.266px left=323.577px top=79.44px}
+
+
+![](../shared_media/images/ds6_cover_small.jpg){.absolute width=327.366px height=414.39px left=-5.12444px top=93.0577px}
+
+
+![](../shared_media/images/dsr2_cover_small.jpg){.absolute width=326.191px height=431.531px left=674.797px top=76.5023px}
+
+
+## {background-video="../shared_media/video/ais_promo_small.mp4"}
+
+
+## Too long, won't listen
+
+::: {.fragment .fade-in-then-out .absolute top=100}
+
+
+> *If you're not doing something different, you're not doing anything at all.*
+>
+> (Edward Tufte)
+
+:::
+
+![](../shared_media/images/ais/prof_tufte.png){.absolute width=349.108px height=326.34px left=1.78701px top=264.426px}
+
+![](../shared_media/images/ais/prof_tuff.png){.absolute width=320.749px height=338.957px left=554.043px top=239.511px}
+
+
+::: notes
+
+Given I don't know what to say I'm going to borrow words from someone more famous, well-respected and quotable than I am: visualization guru (and sculptor) Edward Tufte (Tuff-tee). Apparently he has a small sign taped to his computer screen that says "If you're not doing something different, you're not doing anything at all." It's a note that I don't have taped to my monitor, but I probably should because I like 'different', and I strive for 'different', not always in a good way. 
+
+:::
+
+## The Phonecall
+
+
+![](../shared_media/images/andy_circle.jpg){.absolute width=410.771px height=432.975px left=0px top=65px}
+
+
+![](./media/ziyad.png){.absolute width=411.631px height=431.798px left=623.544px top=26.8088px}
+
+![](../shared_media/images/sage_logo.png){.absolute width=223.584px height=84.7121px left=723.158px top=460.009px}
+
+::: fragment
+
+![](./media/can_phone.png){.absolute width=561.411px height=232.27px left=229.718px top=147.921px}
+
+:::
+
+::: notes
+
+A couple of years later Wiley asked me to write them a 'stats for dummies' book. I was tempted. I spoke to my editor at SAGE about it, and after I assume some kind of collective SAGE London panic attack I received a phone call from Ziyad. I've known Ziyad a long time – he signed my first book – but trust me, he rarely phones me. That's true of most people because I go to great lengths to tell everyone how uncomfortable telephones make me, but a call from Ziyad is a particularly rare and beautiful thing. The gist of that conversation was that Ziyad convinced me to write an intro book for SAGE instead. 'Wileys are full of arseholes' he said …. Ok, he didn't, he said 'Why not write that book for us? We will let you do whatever you like - express yourself fully.'
+"What?" I asked, "You'd give me complete control even after 'the incident'?
+"Yes". He replied (after what I like to mis-remember as a dramatic pause). 
+Ziyad was offering me the opportunity to set my imagination free, to go somewhere that perhaps other publishers would not let me go, to try something without needing to justify it with research, or pedagogy. An opportunity to follow my heart and not my head, but what did my heart want to do?
+
+"If you're not doing something different, you're not doing anything at all." 
+
+:::
+
+
+## The cop out
+
+
+![](../shared_media/images/ds4_cover.png){.absolute width=374.863px height=534.715px left=0px top=65px}
+
+::: fragment
+
+![](../shared_media/images/ds4_ch4.png){.absolute width=438.76px height=519.134px left=579.24px top=78px}
+
+:::
+
+
+::: notes
+
+In 2008 I was in Rotterdam updating my SPSS book (third edition) and like all of my books I had a long list of dissatisfaction with the previous edition. I could just slap a new cover on the front, but I wanted to do something different. After all,
+"If you're not doing something different, you're not doing anything at all."
+I thought it would be interesting to try to embed the academic content within a fictional story. I didn't have a story though, and I had only 6 months to update the book. It would be impossible. So I copped out: I book-ended each chapter with an anecdote from the only story I had to hand – my life. Some thought it was different, but to me it was a poor imitation of what I could have done. 
+
+:::
+
+
+## Discovering statistics using ...
+
+
+![](./media/ds_structure.png){.absolute width=990.159px height=397.555px left=2.20334px top=122.287px}
+
+
+## An adventure in statistics
+
+
+![](./media/ais_structure.png){.absolute width=946.827px height=378.968px left=0.734446px top=150.196px}
+
+
+::: notes
+
+I thought back to 2008, to the idea of writing a fictional story through which a student learns statistics through a shared adventure with the main character. I thought about collaborating with a graphic novel illustrator to bring the story to life. I didn't know anything about writing fiction: but, I didn't know anything about logistic regression and multilevel models before I wrote 60-page chapters about them. Over the next two years I collected ideas for a story, an adventure in statistics. 
+
+:::
+
+## Bringing things to life
+
+
+```{r}
+#| echo: false
+#| eval: true
+
+knitr::include_url("https://www.jamesilesstudio.com/", height = "600px")
+```
+
+
+## The world
+
+![](../shared_media/images/ais/elpis_map.jpg){.absolute width=423.205px height=577.838px left=6.61001px top=46.9427px}
+
+
+::: fragment
+
+![](../shared_media/images/ais/zach.png){.absolute width=311.191px height=318.031px left=424.378px top=82px}
+
+:::
+
+::: fragment
+
+![](../shared_media/images/ais/alice.png){.absolute width=311.191px height=318.031px left=704.809px top=278.969px}
+
+:::
+
+
+::: notes
+
+I imagined a future in which the invention of the reality prism, a kind of hat that splits reality into the subjective and objective had bought society to collapse because everyone could suddenly see the truth. Without blind belief, no-one tried anymore. In the wake of this 'reality revolution' society fragmented into people who held onto the pre-technological past (the Clocktorians) and those who embraced the ever-accelerating technology of the new world (the chippers). Society had become a mix of the ultra-modern and the old fashioned.
+Into this world I put Zach, a rock musician, and his girlfriend Dr. Alice Nightingale are part of the first generation since the revolution not to be held back by the truth, to believe that they can change the world. Zach through his music, and Alice through her research. 
+
+:::
+
+## 
+
+![](../shared_media/images/ais/comic_strip_1_1.jpg){.absolute width=1196.7px height=627.779px left=-98.1772px top=-9.23807px}
+
+::: notes
+
+Then Alice suddenly disappears leaving Zach with a broken heart, a song playing on repeat and a scientific report that makes no sense to him. 
+
+:::
+
+##
+
+
+
+![](../shared_media/images/ais/prof_milton_grey.png){.absolute width=259px height=259px left=0px top=0px}
+
+
+
+::: fragment
+
+![](../shared_media/images/ais/rob_nutcot.png){.absolute width=259px height=260px left=570.772px top=281.17px}
+
+:::
+
+::: fragment
+
+![](../shared_media/images/ais/roediger.png){.absolute width=260px height=259px left=762.719px top=29.9107px}
+
+:::
+
+::: fragment
+
+![](../shared_media/images/ais/celia.png){.absolute width=260px height=259px left=181.328px top=300.531px}
+
+:::
+
+::: fragment
+
+![](../shared_media/images/ais/clint_vue.png){.absolute width=260px height=260px left=375.849px top=19.7678px}
+
+:::
+
+
+::: notes
+
+Fearing the worst, he sets out to find her with only his reality checker, The Head, to help [Click].
+
+Strange things happen: people collapse and lose their memories, he gets messages from someone called Milton, and the word JIG:SAW haunts him.
+
+- Can he trust Milton Grey?[click]
+- Why is Rob Nutcot so weird? [click]
+- How is Roediger connected to Milton?
+- Can he resist the advances of Celia?
+- What the hell *is* Clint Vue?
+
+Zach feels that something is terribly wrong and that Alice is in danger, but her vanishing triggers an even worse thought: that after 10 years they have drifted apart. 
+
+At a simple level 'an adventure in statistics' is a story about Zach searching for Alice, and seeking the truth, but it's also about the unlikely friendship he develops with a sarcastic cat, it's about him facing his fear of science and numbers, it's about him learning to believe in himself. It's a story about love, about not forgetting who you are. It's about searching for the heartbeats that hide in the gaps between you and the people you love. It's about having faith in others. 
+Of course, it's also about fitting models, robust methods, classical and Bayesian estimation, significance testing and whole bunch of other tedious statistical things, but hopefully you'll be so engrossed in the story that you won't notice them. Or they might be a welcome relief from the terrible fiction. Time will tell. 
+
+:::
+
+## Integrating story and stats
+
+> Milton seemed hurt by his recollections, it was clear he didn't like talking about it, but I asked if he still saw this Roediger guy.
+>
+> "No." the Cat replied curtly to end the conversation. There was an awkward silence before he continued as though the conversation about Roediger had never happened, "pretend you are not an annoyingly popular rock star and that you have exactly 5 friend's numbers in your Proteus. Also imagine that you have an app on your Proteus that will select one of these friends. Each selection is known as an experiment."
+
+
+
+## 
+
+![](../shared_media/images/ais/genari_notes.png){.absolute width=690.005px height=690.005px left=36.7268px top=-27.7344px}
+
+::: notes
+
+Also, the examples in the book all relate to parts of the story or the 'puzzle' that Zach has to solve. In this case he steals some notes about Alice from her therapist, through which he learns about different types of data and scales of measurement.
+
+:::
+
+## Integrating story and stats
+
+> Emily became visibly diminished as Sister Price validated each of her concerns, as though each doubt drained a little of her soul. I knew how she felt: over the past few weeks all of my assumptions about the world had been eroded. A couple of weeks ago I thought I was a regular guy, happy with trying to do something with my band, a proud Clocktorian, a man of instinct not evidence, with a girlfriend I loved and admired and who loved me back. I felt secure and happy. Since then everything had changed. Being Clocktorian had made it impossible to find Alice quickly, everyone I met drummed into me to look at evidence and evaluate models of the world, and increasingly I felt sure that my girlfriend couldn't possibly love me back if she treated me this way. I felt detached from and angry with Alice for whatever she was doing; I struggled to hang onto the idea that I should even bother trying to work out what she was messed up with. It would be easier to move on, just like Emily was trying to do. Emily interrupted my thoughts.
+>
+> "My other concern with NHST is that it encourages all-or-nothing thinking. You could see it in the Society: they would completely believe one version of reality and completely reject another, all based on whether a *p*-value fluctuated one side of 0.05 or the other.'
+
+
+## The bridge of death
+
+![](../shared_media/images/ais/probability_bridge.jpg){.absolute width=1088.35px height=570.489px left=7px top=56px}
+
+::: notes
+
+Another example: the bridge of death (the probability bridge) involves several probability-based problems that Zach has to solve to cross the bridge.
+
+:::
+
+## The road to hell is paved with ...
+
+::: incremental
+
+- 2 years prep
+  - 87,204 words of ideas/character/character development
+- 21 months writing (~4000 hours)
+- Writing: 297,676 words, ~1.6 million characters, 13,421 paragraphs and 28,768 lines
+  - 3-4 psychology PhD theses
+  - 60 research papers
+- Reading: at least 1.19 million of my own words
+- 603 diagrams
+- 185 data-related files
+- 1 website
+
+:::
+
+
+::: notes
+
+I don't know exactly how many hours I spent on the book, but I spent probably 2 years casually collecting ideas and thoughts, and developing ideas for the structure and so on. I spent another 21 months pretty much doing not a lot else but writing or re-drafting the book. I had my university job to do as well, so it's impossible to really know how many hours it took to create, but it's probably somewhere in the region of 4000 hours. That's just to the point of submitting the manuscript.
+I wrote 297,676 words, ~1.6 million characters, 13,421 paragraphs and 28,768 lines. In terms of word length that's about 3-4 psychology PhD theses, or if you assume the average research paper is about 5000 words then it's about 60 research papers. In 2 years.
+Given the book had three drafts, and I had to read proofs, I have read at least 1.19 million of my own words. It'll be a lot more than that because of stuff you write and then delete.
+I used Scrivener to plan the story. My project document in which I gathered ideas (e.g., plot ideas, character outlines, descriptions of locations, venues, objects, concepts, artwork ideas etc.) contains another 87,204 words and quite a few images – in addition to the 297,676 word in the book itself.
+I created 603 diagrams. [Not all of them are the book because this includes old versions of diagrams, and image files that I used in diagrams – for example, an image of a normal curve that I drop into a finished diagram
+I created 185 data-related files (data files, R-scripts etc.)
+I wrote ~4000 lines of R-code (to generate data, create graphs, run analyses etc.).
+
+:::
+
+## Was it all worth it?
+
+::: {.column width="45%"}
+::: fragment
+> "If you're not doing something different, you're not doing anything at all."
+> *Edward Tufte*
+
+:::
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+::: fragment
+> "I Have at least done something."
+> *Andy Field*
+
+:::
+:::
+
+![](../shared_media/images/ais/comic_strip_zombies.jpg){.absolute width=774px height=424px left=102px top=190px}
+
+::: notes
+
+Is being different good?
+
+- To be clear, it's the most satisfying piece of work I have ever done. It is the thing I am most proud of.
+- Has it created a paradigm shift? No.
+- Do people love it. No - it's a Marmite book.
+- It was shortlisted for 2 awards
+- It's a quirky book overshadowed by the many other more traditional lecturer-friendly ones.
+- I have never liked endings. When I was a child and people would come to stay, I always felt hollow when they left. For over 2 years, the characters in this book – especially Zach, Alice, Milton and Celia – were the house guests of my mind. We've had a lot of fun times. We've worked hard and played hard. We've had lots of late night conversations, we've shared our deepest feelings, we've discussed life, and they've helped me to see the world through different eyes. Now they have left me to find their own way in the world and I'm going to miss them. I feel a little hollow. "If you're not doing something different, you're not doing anything at all." then I feel that, with 'an adventure in statistics' I have at least done something.
+
+:::
+
+
+
+
