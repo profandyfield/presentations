@@ -138,40 +138,41 @@ knitr::include_url("https://www.jamesilesstudio.com/", height = "600px")
 
 ## The world
 
-![](../shared_media/images/ais/elpis_map.jpg){.absolute width=423.205px height=577.838px left=6.61001px top=46.9427px}
-
-
-::: fragment
-
-![](../shared_media/images/ais/zach.png){.absolute width=311.191px height=318.031px left=424.378px top=82px}
-
-:::
-
-::: fragment
-
-![](../shared_media/images/ais/alice.png){.absolute width=311.191px height=318.031px left=704.809px top=278.969px}
-
-:::
+![](../shared_media/images/ais/elpis_map_dev.jpg){}
 
 
 ::: notes
 
 I imagined a future in which the invention of the reality prism, a kind of hat that splits reality into the subjective and objective had bought society to collapse because everyone could suddenly see the truth. Without blind belief, no-one tried anymore. In the wake of this 'reality revolution' society fragmented into people who held onto the pre-technological past (the Clocktorians) and those who embraced the ever-accelerating technology of the new world (the chippers). Society had become a mix of the ultra-modern and the old fashioned.
-Into this world I put Zach, a rock musician, and his girlfriend Dr. Alice Nightingale are part of the first generation since the revolution not to be held back by the truth, to believe that they can change the world. Zach through his music, and Alice through her research. 
+:::
+
+## The characters
+
+
+![](../shared_media/images/ais/zach.png){.absolute width=228.331px height=221.542px left=3.85485px top=46.4025px}
+
+
+::: fragment
+
+![](../shared_media/images/ais/alice.png){.absolute width=228.402px height=217.711px left=720.797px top=51.6016px}
 
 :::
 
-## 
+::: fragment
 
-![](../shared_media/images/ais/comic_strip_1_1.jpg){.absolute width=1196.7px height=627.779px left=-98.1772px top=-9.23807px}
+![](../shared_media/images/ais/comic_strip_1_1.jpg){.absolute width=581.94px height=365.474px left=206.051px top=261.669px}
+
+:::
 
 ::: notes
+
+Into this world I put Zach, a rock musician, and his girlfriend Dr. Alice Nightingale are part of the first generation since the revolution not to be held back by the truth, to believe that they can change the world. Zach through his music, and Alice through her research. 
 
 Then Alice suddenly disappears leaving Zach with a broken heart, a song playing on repeat and a scientific report that makes no sense to him. 
 
 :::
 
-##
+## 
 
 
 
@@ -223,11 +224,59 @@ Of course, it's also about fitting models, robust methods, classical and Bayesia
 
 :::
 
+
+
 ## Integrating story and stats
 
-> Milton seemed hurt by his recollections, it was clear he didn't like talking about it, but I asked if he still saw this Roediger guy.
+> 'What is a probability bridge?'
 >
-> "No." the Cat replied curtly to end the conversation. There was an awkward silence before he continued as though the conversation about Roediger had never happened, "pretend you are not an annoyingly popular rock star and that you have exactly 5 friend's numbers in your Proteus. Also imagine that you have an app on your Proteus that will select one of these friends. Each selection is known as an experiment."
+> 'It's a bridge along which there are choices to make and you need to use probability to make those choices; without understanding probability you will most likely make the wrong choice and when you do your progress is halted. It is the perfect defence.'
+>
+> 'Why?'
+>
+> 'Because absolutely no one understands probability.'
+>
+> Milton looked pleased with his quip. I asked him how 'progress is halted.'
+>
+> 'It depends upon how the tasks are configured. The best case scenario is that you have to turn around and go back.'
+>
+> 'And the worst?'
+>
+> 'You die a slow and horrifically painful death.'
+>
+> 'More slow and horrifically painful than learning about probability?'
+>
+> 'I'm afraid so... 
+
+::: notes
+
+Also, the examples in the book all relate to parts of the story or the 'puzzle' that Zach has to solve. The bridge of death (the probability bridge) involves several probability-based problems that Zach has to solve to cross the bridge.
+
+:::
+
+## Integrating story and stats
+
+> 'The relative frequency is an empirical probability: a probability derived from actual observations, so if you understand relative frequency, you understand empirical probability. We can also look at theoretical or classical probability, which is a probability derived from probability theory.'
+>
+> I didn't like the sound of that. Another sound I didn't like was that of Milton scratching out a diagram on a nearby rock (Figure 7.2). 
+>
+> 'This diagram shows some key concepts in probability' he said excitedly, 'imagine that we looked at your Proteus and found that you had 5 friends in your contacts.'
+>
+> 'That's not very realistic!' I blurted.
+>
+> Milton looked sad, 'I'm a physics professor, in my world that is completely realistic.' 
+
+## The bridge of death
+
+![](../shared_media/images/ais/probability_bridge_ideas_01.jpg){.absolute width=1088.35px height=570.489px left=7px top=56px}
+
+## The bridge of death
+
+![](../shared_media/images/ais/probability_bridge_ideas_02.jpg){.absolute width=1088.35px height=570.489px left=7px top=56px}
+
+## The bridge of death
+
+![](../shared_media/images/ais/probability_bridge.jpg){.absolute width=1088.35px height=570.489px left=7px top=56px}
 
 
 
@@ -237,33 +286,48 @@ Of course, it's also about fitting models, robust methods, classical and Bayesia
 
 ::: notes
 
-Also, the examples in the book all relate to parts of the story or the 'puzzle' that Zach has to solve. In this case he steals some notes about Alice from her therapist, through which he learns about different types of data and scales of measurement.
+Another example. In this case he steals some notes about Alice from her therapist, through which he learns about different types of data and scales of measurement.
 
 :::
 
-## Integrating story and stats
+## Developing characters
 
-> Emily became visibly diminished as Sister Price validated each of her concerns, as though each doubt drained a little of her soul. I knew how she felt: over the past few weeks all of my assumptions about the world had been eroded. A couple of weeks ago I thought I was a regular guy, happy with trying to do something with my band, a proud Clocktorian, a man of instinct not evidence, with a girlfriend I loved and admired and who loved me back. I felt secure and happy. Since then everything had changed. Being Clocktorian had made it impossible to find Alice quickly, everyone I met drummed into me to look at evidence and evaluate models of the world, and increasingly I felt sure that my girlfriend couldn't possibly love me back if she treated me this way. I felt detached from and angry with Alice for whatever she was doing; I struggled to hang onto the idea that I should even bother trying to work out what she was messed up with. It would be easier to move on, just like Emily was trying to do. Emily interrupted my thoughts.
->
-> "My other concern with NHST is that it encourages all-or-nothing thinking. You could see it in the Society: they would completely believe one version of reality and completely reject another, all based on whether a *p*-value fluctuated one side of 0.05 or the other.'
+![](../shared_media/images/ais/ais_celia_dev.jpg){}
+
+## Developing graphics
+
+![](../shared_media/images/ais/andy_sketch_strip_5_2.jpg){}
+
+## Developing graphics
+
+![](../shared_media/images/ais/chapter_5_strip_2_rough_layout.jpg){}
+
+## Developing graphics
+
+![](../shared_media/images/ais/chapter_5_strip_2_black_and_white.jpg){.editable}
+
+## Developing graphics
+
+![](../shared_media/images/ais/chapter_5_strip_2.jpg){}
+
+## Developing graphics
 
 
-## The bridge of death
 
-![](../shared_media/images/ais/probability_bridge.jpg){.absolute width=1088.35px height=570.489px left=7px top=56px}
+![](../shared_media/images/ais/chapter_4_strip_1.jpg){.absolute width=799.542px height=439.117px left=234.247px top=162.928px}
 
-::: notes
+![](../shared_media/images/ais/andy_sketch_strip_4_1_miltons_creation.jpg){.absolute width=310.088px height=240.15px left=0px top=65px}
 
-Another example: the bridge of death (the probability bridge) involves several probability-based problems that Zach has to solve to cross the bridge.
 
-:::
 
 ## The road to hell is paved with ...
+
+![](./media/typing_kermit.gif){.absolute width=381.684px height=290.362px left=600px top=252px}
 
 ::: incremental
 
 - 2 years prep
-  - 87,204 words of ideas/character/character development
+  - 87,204 words of storyline/character/object/location development
 - 21 months writing (~4000 hours)
 - Writing: 297,676 words, ~1.6 million characters, 13,421 paragraphs and 28,768 lines
   - 3-4 psychology PhD theses
