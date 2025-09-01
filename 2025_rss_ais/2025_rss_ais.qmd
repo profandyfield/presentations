@@ -149,18 +149,24 @@ I imagined a future in which the invention of the reality prism, a kind of hat t
 ## The characters
 
 
-![](../shared_media/images/ais/zach.png){.absolute width=228.331px height=221.542px left=3.85485px top=46.4025px}
+![](../shared_media/images/ais/zach.png){.absolute width=228px height=221px left=4px top=50px}
 
 
 ::: fragment
 
-![](../shared_media/images/ais/alice.png){.absolute width=228.402px height=217.711px left=720.797px top=51.6016px}
+![](../shared_media/images/ais/alice.png){.absolute width=228px height=221px left=720px top=50px}
 
 :::
 
 ::: fragment
 
 ![](../shared_media/images/ais/comic_strip_1_1.jpg){.absolute width=581.94px height=365.474px left=206.051px top=261.669px}
+
+:::
+
+::: fragment
+
+![](../shared_media/images/ais/the_head.png){.absolute width=228px height=221px left=358px top=50px}
 
 :::
 
@@ -318,7 +324,21 @@ Another example. In this case he steals some notes about Alice from her therapis
 
 ![](../shared_media/images/ais/andy_sketch_strip_4_1_miltons_creation.jpg){.absolute width=310.088px height=240.15px left=0px top=65px}
 
+## Trivia
 
+::: incremental
+
+- Each Chapter subtitle is the name of a song
+- I had a lot of fun naming stuff ...
+  - [Elpis]{.alt} in Greek mythology is the personification of hope and learning should be approached with hope
+  - Professor [Milton]{.alt} Grey was named after Schrödinger's actual cat
+  - [The evil pockets]{.alt} is a translation of Malbowges from Dante's Inferno
+  - The cafe made of programmable matter named after [Hermes]{.alt} the god of transformation.
+  - Rival districts of [Jerzy]{.alt} and [Aylmer]{.alt} named after certain quarrelling Statisticians!
+- ["Si Momentum Requiris, Circumspice"]{.alt} is a play on words of Christopher Wren's inscription at St. Paul's Cathedral (["Si Monumentum Requiris, Circumspect"]{.alt})
+- There are lots of Easter eggs in the book ...
+
+:::
 
 ## The road to hell is paved with ...
 

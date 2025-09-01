@@ -1,0 +1,74 @@
+---
+title: "RSS AiS Talk Notes"
+author: "Andy Field"
+date: ""
+date-modified: today
+format: 
+  html:
+    theme: lux
+---
+
+> "If you're not doing something different, you're not doing anything at all."
+
+## Background
+
+Wiley asked me to write them a *statistics for dummies* book. I was tempted. I spoke to my editor at SAGE about it, and after I assume some kind of collective SAGE London panic attack I received a phone call from Ziyad. I've known Ziyad a long time – he signed my first book – but trust me, he rarely phones me.
+
+> 'Wileys are full of arseholes' he said …. Ok, he didn't, he said 'Why not write that book for us? We will let you do whatever you like - express yourself fully.'
+> 
+> "What?" I asked, "You'd give me complete control even after 'the incident'?"
+>
+> "Yes". He replied (after what I like to mis-remember as a dramatic pause). 
+
+Ziyad was offering me the opportunity to set my imagination free, to go somewhere that perhaps other publishers would not let me go, to follow my heart and not my head, but what did my heart want to do?
+
+> "If you're not doing something different, you're not doing anything at all."
+
+Dramatic flashback: In 2008 I was in Rotterdam updating my SPSS book (third edition) and like all of my books I had a long list of dissatisfaction with the previous edition. I wanted to do something different. After all, "If you're not doing something different, you're not doing anything at all." I thought it would be interesting to try to embed the academic content within a fictional story. I didn't have a story though, and I had only 6 months to update the book. It would be impossible. So I copped out: I book-ended each chapter with an anecdote from the only story I had to hand – my life. Some thought it was different, but to me it was a poor imitation of what I could have done.
+
+I thought back to 2008, to the idea of writing a fictional story through which a student learns statistics through a shared adventure with the main character. I thought about collaborating with a graphic novel illustrator to bring the story to life. I didn't know anything about writing fiction: but, I didn't know anything about logistic regression and multilevel models before I wrote 60-page chapters about them. Over the next two years I collected ideas for a story, an adventure in statistics.
+
+## The story
+
+I imagined a future in which the invention of the reality prism, a kind of hat that splits reality into the subjective and objective had bought society to collapse because everyone could suddenly see the truth. Without blind belief, no-one tried anymore. In the wake of this 'reality revolution' society fragmented into people who held onto the pre-technological past (the Clocktorians) and those who embraced the ever-accelerating technology of the new world (the chippers). Society had become a mix of the ultra-modern and the old fashioned.
+
+::: {.callout-tip}
+## Zach/Alice Slide
+
+Into this world I put Zach, a rock musician, and his girlfriend Dr. Alice Nightingale are part of the first generation since the revolution not to be held back by the truth, to believe that they can change the world. Zach through his music, and Alice through her research.
+
+Then Alice suddenly disappears leaving Zach with a broken heart, a song playing on repeat and a scientific report that makes no sense to him.
+
+Fearing the worst, he sets out to find her with only his reality checker, The Head, to help  [[click]]{.text-success}.
+
+:::
+
+::: {.callout-tip}
+## Characters Slide
+
+Strange things happen: people collapse and lose their memories, he gets messages from someone called Milton, and the word JIG:SAW haunts him.
+
+- Can he trust Milton Grey? [[click]]{.text-success}
+- Why is Rob Nutcot so weird? [[click]]{.text-success}
+- How is Roediger connected to Milton? [[click]]{.text-success}
+- Can he resist the advances of Celia? [[click]]{.text-success}
+- What the hell *is* Clint Vue? [[click]]{.text-success}
+
+Zach feels that something is terribly wrong and that Alice is in danger, but her vanishing triggers an even worse thought: that after 10 years they have drifted apart.
+
+:::
+
+At a simple level 'an adventure in statistics' is a story about Zach searching for Alice, and seeking the truth, but it's also about the unlikely friendship he develops with a sarcastic cat, it's about him facing his fear of science and numbers, it's about him learning to believe in himself. It's a story about searching for the heartbeats that hide in the gaps between you and the people you love. It's about having faith in others.
+
+Of course, it's also about fitting models, robust methods, classical and Bayesian estimation, significance testing and whole bunch of other tedious statistical things, but hopefully you'll be so engrossed in the story that you won't notice them. Or they might be a welcome relief from the terrible fiction. Time will tell.
+
+## The road to hell is paved with ...
+
+- I don't know exactly how many hours I spent on the book, but I spent probably 2 years casually collecting ideas and thoughts, and developing ideas for the structure and so on.
+- I spent another 21 months pretty much doing not a lot else but writing or re-drafting the book. I had my university job to do as well, so it's impossible to really know how many hours it took to create, but it's probably somewhere in the region of 4000 hours. That's just to the point of submitting the manuscript. 
+- I wrote 297,676 words, ~1.6 million characters, 13,421 paragraphs and 28,768 lines. In terms of word length that's about 3-4 psychology PhD theses, or if you assume the average research paper is about 5000 words then it's about 60 research papers. In 2 years.
+- Given the book had three drafts, and I had to read proofs, I have read at least 1.19 million of my own words. It'll be a lot more than that because of stuff you write and then delete.
+- I used Scrivener to plan the story. My project document in which I gathered ideas (e.g., plot ideas, character outlines, descriptions of locations, venues, objects, concepts, artwork ideas etc.) contains another 87,204 words and quite a few images – in addition to the 297,676 word in the book itself.
+- I created 603 diagrams. [Not all of them are the book because this includes old versions of diagrams, and image files that I used in diagrams – for example, an image of a normal curve that I drop into a finished diagram]
+- I created 185 data-related files (data files, R-scripts etc.)
+- I wrote ~4000 lines of R-code (to generate data, create graphs, run analyses etc.).
