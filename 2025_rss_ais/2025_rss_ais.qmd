@@ -304,7 +304,7 @@ Another example. In this case he steals some notes about Alice from her therapis
 
 ## Developing graphics
 
-![](../shared_media/images/ais/chapter_5_strip_2_black_and_white.jpg){.editable}
+![](../shared_media/images/ais/chapter_5_strip_2_black_and_white.jpg){}
 
 ## Developing graphics
 
