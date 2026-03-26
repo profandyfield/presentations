@@ -1,0 +1,100 @@
+---
+title: "Andy Field CV"
+author:
+  firstname: Andy
+  lastname: Field
+  address: "School of Psychology, University of Sussex, Brighton, BN1 9QH, UK"
+  position: Professor of Quantitative Methods
+  contacts:
+    - icon: fa envelope
+      text: andy.field@sussex.ac.uk
+      url: "mailto:andy.field@sussex.ac.uk"
+    - icon: assets/icon/bi-house-fill.svg
+      text: profandyfield.com
+      url: https://profandyfield.com
+    - icon: fa brands orcid
+      text: 0000-0003-3306-4695
+      url: https://orcid.org/0000-0003-3306-4695
+    - icon: fa brands github
+      text: GitHub
+      url: https://github.com/profandyfield
+    - icon: fa brands linkedin
+      text: LinkedIn
+      url: https://linkedin.com/in/profandyfield
+format: awesomecv-typst
+execute:
+  echo: false
+  warning: false
+  message: false
+brand:
+  typography: 
+    fonts:
+      - family: Roboto
+        source: google
+        weight: [100, 400, 700]
+      - family: Source Sans 3
+        source: google
+        weight: [100, 400, 700]
+        style: [normal, italic]
+    base: Source Sans 3
+  color:
+    primary: "#3F77CA"
+    link: "#899D33"
+  defaults: 
+    awesomecv-typst:
+      font-header: Roboto
+---
+
+```{r}
+# install.packages("typstcv", repos = "https://kazuyanagimoto.r-universe.dev")
+library(typstcv)
+```
+
+
+## Experience
+
+Sharpe (2013)^[Sharpe, D. (2013). Why the resistance to statistical innovations? Bridging the communication gap. *Psychological Methods*, 18, 572–582. [https://doi.org/10.1037/a0034177](https://doi.org/10.1037/a0034177)] identified me as a modern day *mavern* of quantitative methods: a trusted expert who bridges the communication gap by passing on knowledge in an accessible way. My statistics textbooks are among the most widely used, innovative and influential internationally:
+
+- My textbook series *Discovering Statistics Using ...* (there are [SPSS](https://discoverspss.com/), [R](https://www.discovr.rocks/), [JASP](https://discoverjasp.com/) and SAS variants) has sold over half a million copies. These books are used in more than 20 academic disciplines, across over 30 countries, and have been [cited >150,000 times](https://scholar.google.com/citations?user=0Iy7PFYAAAAJ&hl=en). 
+- In [*An adventure in statistics*](https://www.statisticsadventure.com/book/), statistics is taught through a futuristic fictional narrative that follows a rock musician Zach on a quest to find his scientist girlfriend Alice. While uncovering the truth of her disappearance, Zach faces challenges that require him to learn statistics guided by a head in a pocket watch, a talking cat, a statistical cult, and the enigmatic Celia. This book combines fiction and graphic novel elements to teach statistics like it has never been taught before. 
+
+```{=typst} 
+#set par(justify: true)
+#{
+  show block: set text(size: 9pt)
+  block(
+    fill: rgb("#D8E4F4"),
+    inset: 8pt,
+    radius: 4pt)[_"Not only the story of the book is so well told that I am emphatic with Zach, but also brilliantly accomplishes the purpose of teaching stats from scratch way better than any other attempt I have read before. In fact, I got all excited about stats ... It seriously changed the way I felt about stats ... you turned the pain into joy for the rest of my career."_ Karim (Unsolicited email, Mexico)]
+}
+
+```
+
+I have hundreds of emails from students of all ages, nationalities, and cultural backgrounds expressing thanks for helping them to understand statistics. My [YouTube channel](https://www.youtube.com/channel/UCakigkjm3vBzEHpFzECDXQQ) of statistics tutorials has 51,800+ subscribers and 4.8+ million views. I am a founding (and current) member of the *RSS Teaching Statistics Section*.  I contribute to the professional development of other educators/teachers/students through open source educational resources such as the `discovr` (2025) package of interactive R tutorials, which has been downloaded >28,000 times in the 9 months since release, and through [invited talks/keynotes](https://profandyfield.github.io/presentations/index.html). Recent examples:
+
+- 2025: [RSS conference](https://profandyfield.github.io/presentations/2025_rss_ais/2025_rss_ais.html)
+- 2024: [RSS conference](https://profandyfield.github.io/presentations/2024_rss_tap_hell/2024_rss_tap_hell.html); [The Enterprise Applications of the R Language (EARL) Conference](https://profandyfield.github.io/presentations/2024_earl/2024_earl.html)
+- 2023: [Teaching and Learning Mathematics Online (TALMO) in conjunction with RSS Teaching Statistics Section](https://profandyfield.github.io/presentations/2023_learnr/2023_talmo_learnr.html#/title-slide)
+- 2022: [Advanced Mathematics Support Programme (AMSP) Core Maths Festival](https://profandyfield.github.io/talks/stats_talks/2022_core_maths_festival/2022_core_maths_festival.html#1); [SETSA Festival of computing](https://profandyfield.github.io/talks/stats_talks/2022_stem_computing/2022_stem_computing.html#1)
+- 2021: [Teaching Statistics in Psychology. Trent University and York University, Canada](https://profandyfield.github.io/talks/stats_talks/2021_teaching_stats/2021_teaching_stats.html#1)
+
+
+```{=typst} 
+#set par(justify: true)
+#{
+  show block: set text(size: 9pt)
+  block(
+    fill: rgb("#D8E4F4"),
+    inset: 8pt,
+    radius: 4pt)[_"For the first time in my life, I actually understood statistics. Your way of making it accessible is truly a gift ... You made stats enjoyable—something I never thought I'd say! ... Your book meant so much to me—not just the way you explained concepts, but the personal storytelling, the fun experiments, and the summaries ... Thank you, from the bottom of my heart, for making such a meaningful impact on my life."_ Rayshma Ginda (Unsolicited email, UK)]
+}
+
+```
+
+
+## Awards
+
+My innovative approach to teaching statistics led to me being awarded University of Sussex **institutional education awards** in 2001, 2015, 2016, 2018, 2019, 2020, 2023, and 2024 across the categories of 'teaching to disrupt', 'innovation in teaching' and 'kindness, integrity, and inclusion'. Nationally, I received the **British Psychological Society (BPS) Award for Excellence in Teaching** (2006), and a prestigious **National Teaching Fellowship** (2010).
+
+My textbook *Discovering statistics using IBM SPSS Statistics* won the **BPS Book Award** (2007) and in 2017 *An adventure in statistics* was shortlisted for the **BPS Book Award**, **British Book Design and Production Awards**, and **Association of Learned & Professional Society Publishers Award for Innovation in Publishing**.
+

@@ -1,0 +1,51 @@
+---
+title: ""
+embed-resources: true
+format:
+  typst:
+    template: typst-template.typ
+---
+
+
+**To the William Guy Lectureship appointing committee**
+
+I am writing to express my interest in becoming the William Guy lecturer for 11-16 year olds 2026-2027. My entire academic career has been driven by a deep passion to make Statistics engaging and accessible. I teach statistics to non-statisticians (Psychologists) so I am constantly developing new and inventive ways to inspire undergraduate students about the importance of Statistics not just as a scientific tool, but as a life skill. Along this journey I have written some much loved and hugely popular statistics textbooks including one that teaches through a fictional narrative, and written  innovative lectures that embed narratives. I'll wager that the University of Sussex is the only institution where you will be taught statistics by a wizard trying to save dragons, an astronaut preventing an alien invasion, a pirate battling AI, a zombie trying to out-scare werewolves, or indeed Santa Clause. I'll leave you to decide whether this is a good thing.
+
+```{=typst} 
+#set par(justify: true)
+#{
+  show block: set text(size: 9pt)
+  block(
+    fill: rgb("#EAE5DD"),
+    inset: 8pt,
+    radius: 4pt)[Why the William Guy Lectureship?]
+}
+```
+
+In recent years I have become increasingly convinced that I am battling to undo statistical baggage picked up earlier in my students' academic journeys. We need to instil a joy of statistical literacy *before* university. To this end, I registered as a STEM ambassador 2018-2024 with ambitions to inspire the schoolchildren of East Sussex. However, the experience was ultimately disappointing. Through that programme, local requests relating to statistics were rarely, if ever, posted. The opportunities I had hoped for weren't there. I see the William Guy lectureship as a platform to be *proactive*, rather than reactive, in inspiring the next generation to appreciate the importance of statistical literacy as a life skill.
+
+```{=typst} 
+#set par(justify: true)
+#{
+  show block: set text(size: 9pt)
+  block(
+    fill: rgb("#EAE5DD"),
+    inset: 8pt,
+    radius: 4pt)[Why now?]
+}
+```
+
+I am currently working on a proposal for a popular science book with the working title *Why should I believe you?* It's early days, but the premiss of the book is that we should ask this question whenever we are confronted with information, and to answer it we need statistical skills. Through relevant examples I'll explore key questions that need to be asked to interrogate claims: Is it possible to test the claim? What story does the informant want me to believe? (*bias in models*) What variables were measured? (*measurement*) What is the cause? (*causality*) What are the other explanations? (*confounds*, *randomization*, *sampling* etc.) Should I care? (*statistical significance*, *uncertainty*, *effect sizes*) I have designed the talk to be somewhat modular so it can be delivered at different levels for different year groups withion the range.
+
+I have considered applying for the William Guy lectureship for quite a few years, but COVID happened and the themes have never been quite the right fit. Unfortunately, I have a personality that tends to assume everyone else will do a better job than me and that I have nothing 'special' to offer. However, the theme of *Statistics and Misinformation* fits perfectly with the ideas I have been developing for the book. Within this theme I feel like I can do something really inspiring. Working on the book means that I have a core message worth distilling into a lecture, and writing the talk will give me the mental space to explore engaging examples and think about how best to present the ideas. The lectures themselves will give me valuable feedback through questions and interactions with students and teachers.
+
+These two long-held aspirations (write a popular science book, engage more pro-actively in school outreach) seem to have coalesced with the William Guy Lectureship. The stars have aligned.
+
+Yours sincerely
+
+```{=typst}
+#image("./images/andy_signature_2019_trans.png", width: 5cm)
+```
+
+
+

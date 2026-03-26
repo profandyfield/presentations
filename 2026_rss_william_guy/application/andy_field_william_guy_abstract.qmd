@@ -1,0 +1,27 @@
+---
+title: Why should I believe you?
+subtitle: Surviving in an age of grift
+embed-resources: true
+format:
+  typst:
+    template: typst-template.typ
+---
+
+
+# Why should I believe you?
+
+## Abstract
+
+Think about something you believe. Now ask yourself *why* you believe it? Maybe you concluded that the belief came from someone you trust. Perhaps the belief is consistent with your friends. Did experience tell you the belief is true? There's a good chance you didn't decide that the belief came from a careful evaluation of the evidence. Our beliefs define who we are, so we need to take care with how we allow them to form. An increasing swarm of grifters use misinformation to influence what you think about culture, sport, politics, health and how you treat others. It has never been more important to ask 'why should I believe you?'. This talk gives you tools to answer that question through exploring three critical questions:
+
+- To what extent can the question be answered? Through this question we explore measurement. For example, what is XG in soccer analytics and does it tell us anything useful about team performance? 
+- What story does the person want me to believe? Through this question we'll explore bias and how different statistical information (*p*-values, confidence intervals, effect sizes) can be used to support different narratives. For example, in a study showing a trivial but significant link between screen time and adolescent mental health, what statistical information might a parent focus on? How about a politician? What about a game developer? A researcher with a vested interest in a hypothesis?
+- What are the other explanations? The internet wants me to believe that Tai-Chi walking will give me a six-pack? We'll journey through different levels of causal evidence for the advice of internet influencers, starting at confounds, ending at randomized control trials, and possibly visiting longitudinal statistical models along the way. 
+
+This talk gives you a roadmap to dis-empowering the grifters by becoming an expert at interrogating evidence.
+
+
+
+
+
+

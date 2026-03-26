@@ -1,0 +1,65 @@
+---
+title: "The William Guy Lectureship"
+author: "Andy Field"
+institute: "University of Sussex"
+format: 
+  revealjs:
+    code-fold: false
+    highlight: "kate"
+---
+
+
+## Think of a belief
+
+
+![](../shared_media/images/dog_thinking_1.gif){.absolute top="100" left="400" height="500"}
+
+## Where does that belief come from?
+
+
+![](../shared_media/images/dog_thinking_2.gif){.absolute top="100" left="400" height="500"}
+
+## {background="../shared_media/images/information_overload.png"}
+
+## {background="../shared_media/images/information_overload.png"}
+
+
+![](../shared_media/images/teacher_confident_194363896.jpeg){.absolute left=0 right=0 bottom=0 top=0 height="100%" width="100%" style="margin: auto auto;"}
+
+## {background="../shared_media/images/information_overload.png"}
+
+
+![](../shared_media/images/peers_in_class.jpg){.absolute left=0 right=0 bottom=0 top=0 height="100%" width="100%" style="margin: auto auto;"}
+
+## {background="../shared_media/images/information_overload.png"}
+
+
+![](../shared_media/images/chloe_kelly.gif){.absolute left=0 right=0 bottom=0 top=0 height="100%" width="100%" style="margin: auto auto;"}
+
+## {background="../shared_media/images/information_overload.png"}
+
+![](../shared_media/images/data_can't_be_wrong_meme.gif){.absolute left=0 right=0 bottom=0 top=0 height="100%" width="100%" style="margin: auto auto;"}
+
+## {background="../shared_media/images/information_overload.png"}
+
+## 
+
+![](../shared_media/images/tai_chi_walking_guy.jpg){.absolute top="0" left="550" height="650"}
+
+## 
+
+![](../shared_media/images/tai_chi_walking_base.png){.absolute top="0" left="0" height="650"}
+
+
+## 
+
+![](../shared_media/images/tai_chi_walking_q1.png){.absolute top="0" left="0" height="650"}
+
+## 
+
+![](../shared_media/images/tai_chi_walking_q2.png){.absolute top="0" left="0" height="650"}
+
+## 
+
+![](../shared_media/images/tai_chi_walking_q3.png){.absolute top="0" left="0" height="650"}
+
