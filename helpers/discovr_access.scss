@@ -100,8 +100,70 @@ $subtitle: $wht !default;
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(68, 126, 65)" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>') !important;
 }
 
+.reveal .slide .ong_bold {
+    color: #FFAD00;
+    font-weight: bold;
+}
+
+
+/* table styles (td is data rows, th is heading rows) */
+
+.reveal .slide table tbody tr:nth-child(odd) {
+  background-color: #e6edf4;
+}
+
+.reveal .slide table tbody td:hover {
+  background-color: #ffffa1;
+}
+
+.reveal .slide .tbl_s_dk table td,
+.reveal .slide .tbl_s_dk table th {
+  font-size: 60%;
+  padding: 10px;
+  background-color: #e6edf4;
+}
+
+.reveal .slide .tbl_dk table td,
+.reveal .slide .tbl_dk table th {
+  background-color: #e6edf4;
+}
+
+
+.reveal .slide table td {
+   padding: 15px;
+   font-size: 18px;
+}
+
+.reveal .slide table th {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.reveal .slide .tbl_s table td,
+.reveal .slide .tbl_s table th {
+  font-size: 60%;
+  padding: 10px;
+}
+
+.reveal .slide .tbl_l table td,
+.reveal .slide .tbl_l table th {
+  font-size: 125%;
+  padding: 20px;
+}
+
+/* reduce font size in data tables */
+
+.reveal .slide table.dataTable td {
+  font-size: 80%;
+}
+
 
 // start using css here
+
+.center-h {
+  text-align: center;
+}
 
 p.subtitle {
   color: white !important;
