@@ -2617,6 +2617,10 @@ $presentation-author-block-padding-right: if(
 }
 
 
+.reveal .slide h3{
+  color: $emph1;
+}
+
 .slide-background-content{
   background-image: url("https://profandyfield.github.io/presentations/shared_media/images/slide_background_main.jpg");
   background-size: cover;
