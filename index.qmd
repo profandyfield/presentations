@@ -6,9 +6,8 @@ format:
     title-block-banner: "#7B67A2"
     toc: true
     toc_float: true
-    theme: [helpers/ds2_theme.scss]
+    theme: [helpers/index.scss]
 ---
-
 
 ## 2026
 

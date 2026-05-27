@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,400italic,400bold);
+@import url(https://fonts.googleapis.com/css?family=Sintony:400,400bold);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono&display=swap);
+
+$txt:     #707172 !default; // main text colour (against white), if background use with white text
+$h1_col: #7B67A2 !default; // H1 colour (against white), if background use with white text
+$emph1: #447E41  !default; // link colour (against white), if background use with white text
+$link: #BB5143  !default; // bold colour (against white), if background use with white text
+$box: #807030 !default; // box colour (against white), use with txt and h1_col text, do not use as text
+$wht: #FFFFFF !default; // use with white text
+$quote: #657284 !default; // use with white text
+
+
+// Primary/body text
+$mainFont: 'Poppins', sans-serif;
+$mainFontSize: 24px;
+$mainColor: $txt;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Sintony', Impact, sans-serif;
+$headingColor: $h1_col;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$headingFontWeight: normal;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 2.00em;
+$heading2Size: 1.55em;
+$heading3Size: 1.25em;
+$heading4Size: 1.00em;
+
+$codeFont: 'Fira Mono';
+
+/*-- scss:defaults --*/
+
+// colors
+$body-bg: $wht !default;
+$body-color: $txt !default;
+$link-color: $link !default;
+$selection-bg: $txt !default;
+$border-color:  $link;
+$subtitle: $wht !default;
+
