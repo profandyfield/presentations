@@ -9,12 +9,23 @@ format:
 ---
 
 
-## Think of a belief
+##
+
+::: notes
+Think of a belief
+:::
+
+## 
 
 
 ![](../shared_media/images/dog_thinking_1.gif){.absolute top="100" left="400" height="500"}
 
-## Where does that belief come from?
+::: notes
+Take a few seconds and think about where that belief came from?
+:::
+
+
+## 
 
 
 ![](../shared_media/images/dog_thinking_2.gif){.absolute top="100" left="400" height="500"}
