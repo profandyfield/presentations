@@ -9,3 +9,4 @@ media_dev/
 /.quarto/
 
 **/*.quarto_ipynb
+.positai
