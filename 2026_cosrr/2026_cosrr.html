@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/tabby.min.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="2026_cosrr_files/libs/clipboard/clipboard.min.js"></script>
+<script src="2026_cosrr_files/libs/quarto-html/tabby.min.js"></script>
+<script src="2026_cosrr_files/libs/quarto-html/popper.min.js"></script>
+<script src="2026_cosrr_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="2026_cosrr_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="2026_cosrr_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="2026_cosrr_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.36">
 
-  <meta name="author" content="Andy P. Field">
-  <title>Presentations</title>
+  <meta name="author" content="Andy Field, Martina Sladekova">
+  <title>Your assumptions are probably wrong: on robust statistics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="2026_cosrr_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="2026_cosrr_files/libs/revealjs/dist/reveal.css">
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,13 +32,13 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-6fb7b6b535c910f96179cc77adeb2dbe.css">
-  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="2026_cosrr_files/libs/revealjs/dist/theme/quarto-6fb7b6b535c910f96179cc77adeb2dbe.css">
+  <link href="2026_cosrr_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="2026_cosrr_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="2026_cosrr_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="2026_cosrr_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="2026_cosrr_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="2026_cosrr_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -131,9 +131,10 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="shared_media/images/slide_background_title.jpg" data-background-opacity="1" data-background-position="center" data-background-size="100%" class="center">
-  <h1 class="title">Presentations</h1>
-  <p class="author">Andy P. Field</p>
+<section id="title-slide" data-background-image="../shared_media/images/slide_background_title.jpg" data-background-opacity="1" data-background-position="center" data-background-size="100%" class="center">
+  <h1 class="title">Your assumptions are probably wrong: on robust statistics</h1>
+  <p class="author">Andy Field, Martina Sladekova</p>
+  <p class="institute">University of Sussex</p>
 
 <!-- <audio controls>
   <source src="media/wittr_prayer_of_transformation.mp3" type="audio/mpeg">
@@ -169,61 +170,223 @@
 
 </section>
 
+<section id="thanks" class="slide level2">
+<h2>Thanks</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../shared_media/images/martina_hex.png" height="250"></p>
+</div><div class="column" style="width:50%;">
+<p><br>
+</p>
+<h3 id="dr.-martina-sladekova">Dr.&nbsp;Martina Sladekova</h3>
+<ul>
+<li><a href="https://martinasladek.co.uk/">martinasladek.co.uk/</a></li>
+<li><a href="https://github.com/martinasladek">github.com/martinasladek</a></li>
+</ul>
+</div></div>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="center-h">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../shared_media/images/beaker.gif" height="210"></p>
+<figcaption>Andy</figcaption>
+</figure>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="center-h">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../shared_media/images/typing_kermit.gif" height="210"></p>
+<figcaption>Martina</figcaption>
+</figure>
+</div>
+</div>
+</div></div>
+</div>
+</section>
+<section id="ols" class="slide level2">
+<h2>OLS</h2>
+<ul>
+<li>Influential cases</li>
+</ul>
+<div class="fragment">
+<h3 id="assumptions">Assumptions</h3>
+<ul>
+<li>Linearity and additivity</li>
+<li>The population model should have:
+<ul>
+<li>Homoscedastic errors</li>
+<li>Independent errors</li>
+</ul></li>
+<li>Normality of something-or-other
+<ul>
+<li>Population model errors</li>
+<li>Sampling distribution</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="ols-consequences-of-bias" class="slide level2">
+<h2>OLS: consequences of bias</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../shared_media/images/ols_assumptions.svg" class="quarto-figure quarto-figure-center" height="600"></p>
+</figure>
+</div>
+</section>
+<section id="robust-procedures" class="slide level2">
+<h2>Robust procedures</h2>
+<ul>
+<li>Robust parameter estimation
+<ul>
+<li>M-estimation to down-weight extreme cases</li>
+<li>Trimming</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Robust standard error estimation
+<ul>
+<li>Heteroskedasticity-consistent standard errors (HC3, HC4)</li>
+<li>Derive SEs empirically using bootstrap resampling</li>
+<li>Generates Robust CIs and test-statistics</li>
+</ul></li>
+</ul>
+</div>
+</section>
 <section id="section" class="slide level2">
-<h2>2026</h2>
+<h2></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../shared_media/images/dsr2_fig_08_13_robust_flow.svg" class="quarto-figure quarto-figure-center" height="600"></p>
+</figure>
+</div>
+</section>
+<section id="what-do-researchers-know" class="slide level2">
+<h2>What do researchers know?</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Sladekova &amp; Field (in press)</strong></p>
+</div>
+<div class="callout-content">
 <ul>
-<li><a href="2026_cosrr/2026_cosrr.html">Your assumptions are probably wrong: on robust statistics</a>. Centre for Open Science and Research Reform launch, University of Sussex, UK, May 27<sup>th</sup>.</li>
+<li>Sladekova, M. &amp; Field, A. P. (in press). Sources of bias in general linear models: assessing researchers understanding and self-reported practice. <em>Royal Society Open Science</em>. <a href="https://osf.io/9xnsw">osf.io/9xnsw</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="fragment">
+<h3 id="participants">Participants</h3>
+<ul>
+<li>794 psychology researchers
+<ul>
+<li>438 unique universities across 55 countries and 42 states.</li>
+<li>44.08% men, 42.19% women, 0.63% non-binary, and 0.13% genderqueer.</li>
+<li>Mean age = 40.01 (SD = 10.79).</li>
+<li>46.73% faculty, 21.16% post-docs, 16.12% Ph.D., 3.53% non-academic</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="what-do-researchers-know-1" class="slide level2">
+<h2>What do researchers know?</h2>
+<div class="fragment">
+<ul>
+<li>Knowledge of OLS conditions
+<ul>
+<li>50 statements (10 per ‘assumption’, 5 True, 5 False)</li>
+<li>Rate from 0 (definitely false) to 10 (definitely true)</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Analytic practice
+<ul>
+<li>2 scenarios (1 experimental, 1 cross-sectional)</li>
+<li>List of assumptions</li>
+<li>For each one checked as relevant
+<ul>
+<li>0 = <em>I do not check for violations of this assumption, nor do I apply any corrections</em></li>
+<li>1 = <em>I check for violations of this assumption, but I do not apply any corrections when I find that the assumption is violated.</em></li>
+<li>2 = <em>I do not check for violations of this assumption, but I apply corrections for potential violations anyway</em> OR <em>I check for violations of this assumption and I also apply corrections when I detect violations.</em></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="what-do-researchers-know-2" class="slide level2">
+<h2>What do researchers know?</h2>
+<h3 id="linearity-and-additivity">Linearity and additivity</h3>
+
+<img data-src="2026_cosrr_files/figure-revealjs/survey_lin-1.png" width="960" class="r-stretch"></section>
+<section id="what-do-researchers-know-3" class="slide level2">
+<h2>What do researchers know?</h2>
+<h3 id="outliers">Outliers</h3>
+
+<img data-src="2026_cosrr_files/figure-revealjs/survey_out-1.png" width="960" class="r-stretch"></section>
+<section id="what-do-researchers-know-4" class="slide level2">
+<h2>What do researchers know?</h2>
+<h3 id="heteroscedasticity">Heteroscedasticity</h3>
+
+<img data-src="2026_cosrr_files/figure-revealjs/survey_het-1.png" width="960" class="r-stretch"></section>
+<section id="what-do-researchers-know-5" class="slide level2">
+<h2>What do researchers know?</h2>
+<h3 id="independence">Independence</h3>
+
+<img data-src="2026_cosrr_files/figure-revealjs/survey_ind-1.png" width="960" class="r-stretch"></section>
+<section id="what-do-researchers-know-6" class="slide level2">
+<h2>What do researchers know?</h2>
+<h3 id="normality">Normality</h3>
+
+<img data-src="2026_cosrr_files/figure-revealjs/survey_norm-1.png" width="960" class="r-stretch"></section>
+<section id="what-do-researchers-say-they-do" class="slide level2">
+<h2>What do researchers say they do?</h2>
+
+<img data-src="2026_cosrr_files/figure-revealjs/practice_scenario-1.png" width="960" class="r-stretch"></section>
+<section id="what-do-researchers-say-they-do-1" class="slide level2">
+<h2>What do researchers say they do?</h2>
+
+<img data-src="2026_cosrr_files/figure-revealjs/practice_overall-1.png" width="1056" class="r-stretch"></section>
+<section id="what-do-researchers-actually-do" class="slide level2">
+<h2>What do researchers <em>actually</em> do?</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Sladekova &amp; Field (in press)</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Sladekova, M., Poupa, V., &amp; Field, A. P. (2026). Sources of bias in general linear models: Evaluating the analytic practice in psychological research. Royal Society Open Science, 13(2), 250076. doi: <a href="https://doi.org/10.1098/rsos.250076">10.1098/rsos.250076</a></li>
+</ul>
+</div>
+</div>
+</div>
+<ul>
+<li>188 psychology researchers analysed data from two scenarios
+<ul>
+<li>Experimental</li>
+<li>Cross-sectional</li>
+</ul></li>
+<li>Analytic scripts and descriptions subsequently coded for the level of attentiveness to
+<ul>
+<li>Outliers and influential cases</li>
+<li>Heteroscedasticity</li>
+<li>Non-normal model errors</li>
+</ul></li>
 </ul>
 </section>
-<section id="section-1" class="slide level2">
-<h2>2025</h2>
-<ul>
-<li><a href="2025_rss_ais/2025_rss_ais.html">My adventure in statistics</a>. The Royal Statistical Society International Conference, Edinburgh, UK, September 4<sup>th</sup>.</li>
-</ul>
-</section>
-<section id="section-2" class="slide level2">
-<h2>2024</h2>
-<ul>
-<li><a href="2024_earl/2024_earl.html">Narrowing the gender gap in computing: Psychology, R, invisibility cloaks, the Pied Piper and a Trojan horse</a>. The Enterprise Applications of the R Language (EARL) Conference, The Grand Hotel, Brighton, UK, September 4<sup>th</sup>.</li>
-<li><a href="2024_rss_intro/2024_rss_intro.html">The <del>Student</del> Experience of R</a>. The Royal Statistical Society International Conference, Brighton, UK, September 3<sup>rd</sup>.</li>
-<li><a href="2024_rss_tap_hell/2024_rss_tap_hell.html">Using <code>learnr</code> and <code>gradethis</code> to create and mark interactive assessments: The highway to hell</a>. The Royal Statistical Society International Conference, Brighton, UK, September 3<sup>rd</sup>.</li>
-</ul>
-</section>
-<section id="section-3" class="slide level2">
-<h2>2023</h2>
-<ul>
-<li><a href="2023_learnr/2023_talmo_learnr.html">Using learnr to create interactive tutorials for R (and RStudio): from the pinnacle to the pit</a>. Teaching (with) R. Hosted by Teaching and Learning Mathematics Online (TALMO) in conjunction with Royal Statistical Society Teaching Statistics Section. February 8<sup>th</sup>.</li>
-</ul>
-</section>
-<section id="section-4" class="slide level2">
-<h2>2022</h2>
-<ul>
-<li><a href="https://profandyfield.github.io/talks/stats_talks/2022_sage_teaching_stats/2022_sage.html">Teaching statistics: damnation and deliverance</a>. SAGE publications, London. September 7<sup>th</sup>.</li>
-<li><a href="https://profandyfield.github.io/talks/misc_talks/2022_brighton_college/2022_brighton_college.html">Being an academic</a>. Brighton College Professions Conference. May 14<sup>th</sup>.</li>
-<li><a href="https://profandyfield.github.io/talks/stats_talks/2022_stem_computing/2022_stem_computing.html">Psychology: a cloak of invisibility for computing [STEM Ambassador]</a>. SETSA Festival of computing: Shifting the gender gap in computing [online]. March 16<sup>th</sup>.</li>
-<li><a href="https://profandyfield.github.io/talks/stats_talks/2022_core_maths_festival/2022_core_maths_festival.html">An adventure in statistics [Keynote]</a>. Advanced Mathematics Support Programme (AMSP) Winter Core Maths Festival [online]. January 25<sup>th</sup>-6th.</li>
-</ul>
-</section>
-<section id="section-5" class="slide level2">
-<h2>2021</h2>
-<ul>
-<li><a href="https://profandyfield.github.io/talks/stats_talks/2021_learnr/2021_learnr.html">Using learnr to create interactive R tutorials</a>. Teaching R in Psychology. Hosted virtually by Lancaster University. July 19<sup>th</sup>.</li>
-<li><a href="https://profandyfield.github.io/talks/stats_talks/2021_teaching_stats/2021_teaching_stats.html">Teaching statistics: damnation and deliverance [Keynote]</a>. Teaching Statistics in Psychology Virtual Conference, Trent University and York University, Canada. May 5<sup>th</sup>-6th.</li>
-</ul>
-</section>
-<section id="section-6" class="slide level2">
-<h2>2019</h2>
-<ul>
-<li><a href="https://profandyfield.github.io/talks/stats_talks/2019_magnusson/magnusson_intro.html">Damnation and Deliverance in Psychology</a>. Introduction talk for Kristoffer Magnusson’s PhD defense, December 9th.</li>
-<li><a href="https://profandyfield.github.io/talks/stats_talks/srcd_2019/forking_paths_workshop/index.html">Implementing principles and practices of open science in peer relations research</a>. Society for Research in Child Development Biennial Meeting, Baltimore, Maryland, 21st-23rd March.</li>
-<li><a href="https://profandyfield.github.io/talks/maths_education_talks/2019_bristol/bristol_2019.html">What does the transition from primary to secondary education mean for maths achievement and maths anxiety?</a>. University of Bristol, February 27th.</li>
-</ul>
-</section>
-<section id="section-7" class="slide level2">
-<h2>2018</h2>
-<ul>
-<li><a href="https://profandyfield.github.io/talks/maths_education_talks/2018_southampton/southampton_2018.html">What does the transition from primary to secondary education mean for maths achievement and maths anxiety?</a>. University of Southampton, November 26th.</li>
-</ul>
+<section id="what-do-researchers-actually-do-1" class="slide level2">
+<h2>What do researchers <em>actually</em> do?</h2>
+
+<img data-src="2026_cosrr_files/figure-revealjs/analytic_practice-1.png" width="1056" class="r-stretch"></section>
+<section id="conclusion" class="slide level2">
+<h2>Conclusion</h2>
+<p><img data-src="../shared_media/images/we_dont_want_to_be_those_people.gif" height="500"></p>
 
 </section>
     </div>
@@ -234,20 +397,20 @@
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="2026_cosrr_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="index_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="2026_cosrr_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="2026_cosrr_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="2026_cosrr_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="2026_cosrr_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="2026_cosrr_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="2026_cosrr_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="2026_cosrr_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="2026_cosrr_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="2026_cosrr_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="2026_cosrr_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -443,6 +606,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

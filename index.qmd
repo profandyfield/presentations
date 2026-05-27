@@ -10,6 +10,10 @@ format:
 ---
 
 
+## 2026
+
+- [Your assumptions are probably wrong: on robust statistics](2026_cosrr/2026_cosrr.html). Centre for Open Science and Research Reform launch, University of Sussex, UK, May 27<sup>th</sup>. 
+
 ## 2025
 
 - [My adventure in statistics](2025_rss_ais/2025_rss_ais.html). The Royal Statistical Society International Conference, Edinburgh, UK, September 4<sup>th</sup>. 
