@@ -12,6 +12,9 @@ h_col <- function(header_level){
 }
 
 
+
+
+
 txt_col <-     "#707172"
 h1_col <- "#7B67A2"
 emph1_col <- "#447E41" 
@@ -20,6 +23,35 @@ box_col <- "#807030"
 wht_col <- "#FFFFFF" 
 quote_col <- "#657284" 
 
+
+#tol muted theme colours
+
+tol_muted <- khroma::color("muted")(9)
+tol_rose <- tol_muted[1]
+tol_indigo <- tol_muted[2]
+tol_sand <- tol_muted[3]
+tol_green <- tol_muted[4]
+tol_blue <- tol_muted[5]
+tol_byzantine <- tol_muted[6]
+tol_turquoise <- tol_muted[7]
+tol_bile <- tol_muted[8]
+tol_mulberry <- tol_muted[9]
+
+# other themes
+viridis_2 <- scales::viridis_pal(begin = 0.3, end = 0.9)(2)
+viridis_3 <- scales::viridis_pal(begin = 0.2, end = 0.9)(3)
+viridis_4 <- scales::viridis_pal(begin = 0.2, end = 0.9)(4)
+viridis_5 <- scales::viridis_pal()(5)
+viridis_6 <- scales::viridis_pal()(6)
+
+
+# other themes
+turbo_2 <- scales::viridis_pal(begin = 0.2, end = 0.9, option = "turbo")(2)
+turbo_3 <- scales::viridis_pal(begin = 0.2, end = 0.9, option = "turbo")(3)
+turbo_5 <- scales::viridis_pal(option = "turbo")(5)
+turbo_6 <- scales::viridis_pal(option = "turbo")(6)
+turbo_8 <- scales::viridis_pal(begin = 0.05, end = 0.95, option = "turbo")(8)
+turbo_10 <- scales::viridis_pal(begin = 0.05, end = 0.95, option = "turbo")(10)
 
 # set fontawesome icon class
 
