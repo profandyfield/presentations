@@ -87,7 +87,7 @@ source("sladekova_poupa_field_2026_plots.R")
 :::
 ::::
 
-<audio controls autoplay>
+<audio controls>
   <source src="../shared_media/audio/the_number_of_the_beast.mp3" type="audio/mpeg">
   <source src="../shared_media/audio/the_number_of_the_beast.ogg" type="audio/ogg"/>
 </audio>
@@ -298,7 +298,7 @@ The previous study looked at sample sizes and study design too
 :::
 ::::
 
-<audio controls autoplay>
+<audio controls>
   <source src="../shared_media/audio/revelations.mp3" type="audio/mpeg">
   <source src="../shared_media/audio/revelations.ogg" type="audio/ogg"/>
 </audio>
@@ -494,7 +494,7 @@ analytic_practice_gg
 :::
 ::::
 
-<audio controls autoplay>
+<audio controls>
   <source src="../shared_media/audio/caught_somewhere_in_time.mp3" type="audio/mpeg">
   <source src="../shared_media/audio/caught_somewhere_in_time.ogg" type="audio/ogg"/>
 </audio>
@@ -642,7 +642,7 @@ I put this slide in a talk I gave in 2019, it was a note of optimism about how t
 :::
 ::::
 
-<audio controls autoplay>
+<audio controls>
   <source src="../shared_media/audio/brave_new_world.mp3" type="audio/mpeg">
   <source src="../shared_media/audio/brave_new_world.ogg" type="audio/ogg"/>
 </audio>
