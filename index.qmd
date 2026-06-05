@@ -11,6 +11,7 @@ format:
 
 ## 2026
 
+- [Statistical Practice in Psychology: The Numbers of the Beast](2026_uva/2026_uva.html). University of Amsterdam, UK, June 10<sup>th</sup>. 
 - [Your assumptions are probably wrong: on robust statistics](2026_cosrr/2026_cosrr.html). Centre for Open Science and Research Reform launch, University of Sussex, UK, May 27<sup>th</sup>. 
 
 ## 2025
