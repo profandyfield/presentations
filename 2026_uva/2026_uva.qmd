@@ -165,7 +165,7 @@ the model [**residuals**]{.ong_bold}
   - Excess skew/kurtosis ($E(\mu) = 0$)
   - Number of modes
   - Proportion of $|z_\text{resid}|$ > 1.96 (5%), 2.58 (1%) and 3.29 (0.1%)
-  - Heteroscedasticity using Quantile LOWESS Intervals (QLI)^[Sladekova & Field (in press). *Psychological Methods*. DOI: [10.1037/met0000821](https://doi.org/10.1037/met0000821). Zero indicates homoscedasticity.
+  - Heteroscedasticity using Quantile LOWESS Intervals (QLI).^[Sladekova & Field (in press). *Psychological Methods*. DOI: [10.1037/met0000821](https://doi.org/10.1037/met0000821).] Zero indicates homoscedasticity.
 
 
 ::: notes
@@ -558,6 +558,27 @@ and a lot of this when they *do* get significant results
 ## {background-video="../shared_media/video/dancing_cat.mp4" background-size="cover"}
 
 
+## [Dis]{.ong_bold}incentive [(to get things correct)]{.ong_bold} structures^[Adapted from Edwards & Roy (2016)]
+
+```{r}
+#| label: incentives2
+
+tibble::tribble(
+~`Incentive`, ~`Intended effect`, ~`Actual effect`, ~`and also ..`,
+"Researchers rewarded for increased number of publications","Improve research productivity, provide a means of evaluating performance.","Avalanche of substandard, incremental papers; poor methods and increase in false discovery rates leading to a natural selection of bad science.", "Focus on speed and results over process/robustness.",
+"Researchers rewarded for increased number of citations.", "Reward quality work that influences others.","Extended reference lists to inflate citations; reviewers request citation of their work through peer review.", "Focus on results over process/robustness.",
+"Researchers rewarded for 'high impact' publications","Reward quality work that influences others.","Focus on surprising results. Bias towards un-hypothesised but interesting findings.", "Focus on results over process/robustness.",
+"Researchers rewarded for increased grant funding","Ensure that research programs are funded, promote growth, generate overhead.","Increased time writing proposals and less time gathering and thinking about data. Overselling positive results and downplay of negative results.", "Focus on results over process/robustness.",
+) |> 
+  knitr::kable(align = "lcccc") |> 
+  kableExtra::kable_styling(font_size = 18, bootstrap_options = "striped") |> 
+  kableExtra::column_spec(c(1, 3), background = turbo_10[2], color = "white", width = "15em") |> 
+  kableExtra::column_spec(4, background = turbo_10[8], color = "white", width = "10em")
+```
+
+
+
+
 ::: notes
 and the consequences of this are ...
 
@@ -584,7 +605,9 @@ tibble::tribble(
 ```
 
 ::: fragment
+Less obvious QRPs:
 
+- Focus on results over robustness/model fitting process
 - 'Know not what they do' errors
 
 :::
@@ -621,6 +644,24 @@ tibble::tribble(
 I put this slide in a talk I gave in 2019, it was a note of optimism about how things will get better, but as we have seen progress is slow.
 :::
 
+## Consequences of the replication crisis
+
+```{r}
+#| label: open_science3
+
+tibble::tribble(
+~`Initiative`, ~`Explanation`, ~`Intended effect`,
+"Registered reports", "Research accepted for publication before data collected", "Encourages process/robustness over results.",
+"Pre-registration", "Research plans made public before data collected", "Increases accountability. Reduced QRPs. Shifts focus to process/robustness over results.",
+"Data/code sharing", "Data/code posted on public repository", "Errors more easily uncovered, secondary data analysis possible. Shifts focus to robustness/process.",
+"Statistical literacy", "Common statistical (mis)practice is being discussed/debated", "Shifts focus to process/robustness.",
+) |> 
+  knitr::kable(align = "lcccc") |>  
+  kableExtra::kable_styling(font_size = 18, bootstrap_options = "striped") |> 
+  kableExtra::column_spec(c(1, 3), background = turbo_10[2], color = "white", width = "15em") |>  
+  kableExtra::row_spec(4, background = turbo_10[8], color = "white")
+```
+
 ## Brave New World
 
 :::: columns
@@ -656,12 +697,17 @@ I put this slide in a talk I gave in 2019, it was a note of optimism about how t
 
 ::: incremental
 
-- Independent analysts
+- Routine use of robust methods
+  - Bring robustness into the conversation
+- Less science?
+  - Create time and space for better science
+- Independent analysts?
   - Reproducibility checks
   - More team science
-- Better education
+- Better education?
   - UVA leads the way!
-- Less science
-  - Create time and space for better science
+  - Robust methods in software
+  - More focus on the model fitting process in software/tools
+
 
 :::

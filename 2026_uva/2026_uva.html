@@ -6,8 +6,8 @@
 <script src="2026_uva_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="2026_uva_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="2026_uva_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="2026_uva_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.36">
+<link href="2026_uva_files/libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
 
   <meta name="author" content="Andy Field">
   <title>Statistical Practice in Psychology: The Numbers of the Beast</title>
@@ -325,7 +325,7 @@
 <li>Excess skew/kurtosis (<span class="math inline">\(E(\mu) = 0\)</span>)</li>
 <li>Number of modes</li>
 <li>Proportion of <span class="math inline">\(|z_\text{resid}|\)</span> &gt; 1.96 (5%), 2.58 (1%) and 3.29 (0.1%)</li>
-<li>Heteroscedasticity using Quantile LOWESS Intervals (QLI)^[Sladekova &amp; Field (in press). <em>Psychological Methods</em>. DOI: <a href="https://doi.org/10.1037/met0000821">10.1037/met0000821</a>. Zero indicates homoscedasticity.</li>
+<li>Heteroscedasticity using Quantile LOWESS Intervals (QLI).<sup>1</sup> Zero indicates homoscedasticity.</li>
 </ul></li>
 </ul>
 <aside class="notes">
@@ -341,7 +341,7 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>Sladekova &amp; Field (in press). <em>Psychological Methods</em>. DOI: <a href="https://doi.org/10.1037/met0000821">10.1037/met0000821</a>.</p></li></ol></aside></section>
 <section id="distributional-properties" class="slide level2">
 <h2>Distributional properties</h2>
 
@@ -880,7 +880,7 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>Adapted from Edwards &amp; Roy (2016)</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn2"><p>Adapted from Edwards &amp; Roy (2016)</p></li></ol></aside></section>
 <section id="section-2" class="slide level2" data-background-video="../shared_media/video/animal_screams.mp4" data-background-size="cover">
 <h2></h2>
 <aside class="notes">
@@ -899,6 +899,49 @@
 </section>
 <section id="section-3" class="slide level2" data-background-video="../shared_media/video/dancing_cat.mp4" data-background-size="cover">
 <h2></h2>
+</section>
+<section id="disincentive-to-get-things-correct-structures-1" class="slide level2">
+<h2><span class="ong_bold">Dis</span>incentive <span class="ong_bold">(to get things correct)</span> structures<sup>1</sup></h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped caption-top" style="font-size: 18px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Incentive</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Intended effect</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Actual effect</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">and also ..</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Researchers rewarded for increased number of publications</td>
+<td style="text-align: center;">Improve research productivity, provide a means of evaluating performance.</td>
+<td style="text-align: center; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Avalanche of substandard, incremental papers; poor methods and increase in false discovery rates leading to a natural selection of bad science.</td>
+<td style="text-align: center; width: 10em; color: white !important; background-color: rgba(251, 128, 34, 255) !important;">Focus on speed and results over process/robustness.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Researchers rewarded for increased number of citations.</td>
+<td style="text-align: center;">Reward quality work that influences others.</td>
+<td style="text-align: center; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Extended reference lists to inflate citations; reviewers request citation of their work through peer review.</td>
+<td style="text-align: center; width: 10em; color: white !important; background-color: rgba(251, 128, 34, 255) !important;">Focus on results over process/robustness.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Researchers rewarded for 'high impact' publications</td>
+<td style="text-align: center;">Reward quality work that influences others.</td>
+<td style="text-align: center; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Focus on surprising results. Bias towards un-hypothesised but interesting findings.</td>
+<td style="text-align: center; width: 10em; color: white !important; background-color: rgba(251, 128, 34, 255) !important;">Focus on results over process/robustness.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Researchers rewarded for increased grant funding</td>
+<td style="text-align: center;">Ensure that research programs are funded, promote growth, generate overhead.</td>
+<td style="text-align: center; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Increased time writing proposals and less time gathering and thinking about data. Overselling positive results and downplay of negative results.</td>
+<td style="text-align: center; width: 10em; color: white !important; background-color: rgba(251, 128, 34, 255) !important;">Focus on results over process/robustness.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <aside class="notes">
 <p>and the consequences of this are …</p>
 <style type="text/css">
@@ -912,7 +955,7 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn3"><p>Adapted from Edwards &amp; Roy (2016)</p></li></ol></aside></section>
 <section id="questionable-research-practices" class="slide level2">
 <h2>Questionable Research Practices<sup>1</sup></h2>
 <div class="cell">
@@ -961,7 +1004,9 @@
 </div>
 </div>
 <div class="fragment">
+<p>Less obvious QRPs:</p>
 <ul>
+<li>Focus on results over robustness/model fitting process</li>
 <li>‘Know not what they do’ errors</li>
 </ul>
 </div>
@@ -980,7 +1025,7 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<aside><ol class="aside-footnotes"><li id="fn2"><p>Fanelli (2009). PLoS One, 4. DOI: <a href="https://doi.org/10.1371/journal.pone.0005738">10.1371/journal.pone.0005738</a></p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn4"><p>Fanelli (2009). PLoS One, 4. DOI: <a href="https://doi.org/10.1371/journal.pone.0005738">10.1371/journal.pone.0005738</a></p></li></ol></aside></section>
 <section id="consequences-of-the-replication-crisis" class="slide level2">
 <h2>Consequences of the replication crisis</h2>
 <div class="cell">
@@ -1032,6 +1077,44 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="consequences-of-the-replication-crisis-1" class="slide level2">
+<h2>Consequences of the replication crisis</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped caption-top" style="font-size: 18px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Initiative</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Explanation</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Intended effect</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Registered reports</td>
+<td style="text-align: center;">Research accepted for publication before data collected</td>
+<td style="text-align: center; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Encourages process/robustness over results.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Pre-registration</td>
+<td style="text-align: center;">Research plans made public before data collected</td>
+<td style="text-align: center; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Increases accountability. Reduced QRPs. Shifts focus to process/robustness over results.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Data/code sharing</td>
+<td style="text-align: center;">Data/code posted on public repository</td>
+<td style="text-align: center; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important;">Errors more easily uncovered, secondary data analysis possible. Shifts focus to robustness/process.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important; color: white !important; background-color: rgba(251, 128, 34, 255) !important;">Statistical literacy</td>
+<td style="text-align: center; color: white !important; background-color: rgba(251, 128, 34, 255) !important;">Common statistical (mis)practice is being discussed/debated</td>
+<td style="text-align: center; width: 15em; color: white !important; background-color: rgba(71, 124, 243, 255) !important; color: white !important; background-color: rgba(251, 128, 34, 255) !important;">Shifts focus to process/robustness.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
 <section id="brave-new-world" class="slide level2">
 <h2>Brave New World</h2>
 <div class="columns">
@@ -1059,18 +1142,24 @@
 <section id="solutions" class="slide level2">
 <h2>Solutions</h2>
 <ul>
-<li class="fragment">Independent analysts
+<li class="fragment">Routine use of robust methods
+<ul>
+<li class="fragment">Bring robustness into the conversation</li>
+</ul></li>
+<li class="fragment">Less science?
+<ul>
+<li class="fragment">Create time and space for better science</li>
+</ul></li>
+<li class="fragment">Independent analysts?
 <ul>
 <li class="fragment">Reproducibility checks</li>
 <li class="fragment">More team science</li>
 </ul></li>
-<li class="fragment">Better education
+<li class="fragment">Better education?
 <ul>
 <li class="fragment">UVA leads the way!</li>
-</ul></li>
-<li class="fragment">Less science
-<ul>
-<li class="fragment">Create time and space for better science</li>
+<li class="fragment">Robust methods in software</li>
+<li class="fragment">More focus on the model fitting process in software/tools</li>
 </ul></li>
 </ul>
 
